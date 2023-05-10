@@ -36,16 +36,27 @@ export default {
          container : "0px 3px 6px 3px rgba(255, 255, 255, 0.28)"
       },
       animation : {
-          downUpAnimation : 'downUpAnimation 3s linear infinite alternate'
+          downUpAnimation : 'downUpAnimation 3s linear infinite alternate',
+          boxLinguageAnim1 : "boxLinguageAnim1 25s ease-in-out infinite alternate;",
+          boxLinguageAnim2 : "boxLinguageAnim2 25s ease-in-out infinite alternate;"
       },
       keyframes : {
           downUpAnimation : {
             "0%" : {},
             "50%" : {transform: "translateY(-20px)"},
            "100%" : {transform: "translateY(20px)"}
-      }
+      },
+         boxLinguageAnim1 : {
+           "from" : {transform: "translateX(-52%)"},
+           "to" : {transform: "translateX(0%)"}
+         },
+         boxLinguageAnim2 :{
+          "from" : {transform: "translateX(0%)"},
+          "to" : {transform: "translateX(-52%)"}
+         }
     },
   },
   plugins: [],
  }
 }
+

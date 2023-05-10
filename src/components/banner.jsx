@@ -8,11 +8,28 @@ import { WriteTextType } from "./writeTextType"
 import { useState, useEffect } from "react"
 
 const banner = () => {
+  const [scrolled, setScrolled] = useState(false)
   const [offset, SetOffset] = useState(0)
 
-  const handleScroll = () => SetOffset(window.pageYOffset)
-
   
+  const handleScroll = () => SetOffset(window.pageYOffset)
+  
+  useEffect(() => {
+     const onScroll = () => {
+       if(window.scrollY > 861){
+         setScrolled(true)
+         
+       }else{
+         setScrolled(false)
+       }
+     }
+
+     window.addEventListener("scroll", onScroll)
+
+     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
+  
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
 
@@ -22,18 +39,17 @@ const banner = () => {
 
   return (
     <div className='h-screen w-full relative font-inter'>
-      <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-full 
-      brightness-60 relative" ></div>
+      <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-full brightness-60 
+      relative" ></div>
        
        <div className="absolute top-60 w-full ease-in" 
-            style={{transform: `translateY(${offset * 0.8}px)`}}
-            >
+            style={{transform: `translateY(${offset * 0.8}px)`}}>
 
-               <div className="flex flex-col items-center w-7 absolute left-20 
+               <div className="flex flex-col items-center w-7 absolute left-16 
                top-72 max-md:hidden">
              
                    <IconsRedeSocais flexDirection="flex-col" />
-                  <div className="h-24 bg-white w-1 mt-10 rounded-md"></div>
+                   <div className="h-24 bg-white w-1 mt-10 rounded-md"></div>
                </div>
                
           <div className="flex flex-row gap-10 justify-evenly items-center w-8/12 h-[430px] mx-auto 
@@ -51,18 +67,20 @@ const banner = () => {
                       <span className="font-bold text-lg">Bem vindo ao meu portfólio!</span>
                    </div>
        
-                   <h1 className="mt-10 text-6xl font-extrabold max-lg:text-center">
+                   <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center">
                     Oi!Sou Richard,
                       <p className="text-primary-200 max-w-xs max-lg:text-left">
-                        <WriteTextType texto={["Desenvolvedor Web", "Desenvolvedor Front-end"]} 
-                        cursor="true" loops="{}"/>
+                        {scrolled ? "" :
+                           <WriteTextType texto={["Desenvolvedor Web", "Desenvolvedor Fron-end"]} 
+                           cursor="true" loops="{}"/>
+                        }
                       </p>
-                   </h1>
+                   </h2>
        
                    <a className="flex flex-row items-center mt-7 group cursor-pointer" 
                    href="">
                         <p className="text-lg font-bold">
-                        Download CV
+                          Download CV
                         </p>
 
                         <span className="border border-white rounded-full ml-1 duration-300 group-hover:ml-3 

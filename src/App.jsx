@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/navBar'
 import Banner from './components/banner'
 import AboutMe from './components/aboutMe'
+import Skills from './components/skills'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -21,12 +22,15 @@ function App() {
         <>
            <NavBar/>
            <main >
+             
               <Banner />
+              {/* Fundo de estrelas */}
               <div className='bg-space bg-cover bg-center bg-no-repeat h-[2300px] 
               relative z-10' 
             //   style={{transform: `translateY(${-offset * 0.8}px)`}}
               >
                  <AboutMe />
+                 <Skills />
               </div>
            </main>
         </>
