@@ -5,10 +5,26 @@ import IconsRedeSocais from './iconsRedeSocais';
 
 import { IoIosArrowDown, IoIosClose, IoIosMenu } from "react-icons/io";
 
-import { useState } from 'react';
+import { useEffect, useState } from "react"
 
 const navBar = () => {
   const [nav, setNav] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+     const onScroll = () => {
+       if(window.scrollY > 50){
+         setScrolled(true)
+         
+       }else{
+         setScrolled(false)
+       }
+     }
+
+     window.addEventListener("scroll", onScroll)
+
+     return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   const links = [{
     id: 1,
@@ -29,11 +45,12 @@ const navBar = () => {
 ]
 
   return (
-    <header className='h-24 text-white w-screen z-50 fixed'>
-        <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 
-        max-lg:w-10/12 my-1'>
 
-            <div className='w-40 h-16 min-w-40 mr-5'>
+     <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black" : ""} ease-linear duration-700`}>
+        <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 
+        max-lg:w-10/12 my-1 '>
+
+            <div className='w-40 h-16 min-w-40 mr-5 mb-5'>
                 <img 
                 src={logoRichard} 
                 alt="my logo" /> 
