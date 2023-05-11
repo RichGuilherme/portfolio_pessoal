@@ -2,7 +2,7 @@ import { IoIosSchool, IoIosMusicalNotes} from 'react-icons/io'
 import { IoCodeSlashOutline} from 'react-icons/io5'
 
 const aboutMe = () => {
-  const container = 'flex flex-col items-center  w-full max-sm:w-11/12 h-[368px] mx-auto p-10 bg-black shadow-container'
+  const container = 'flex flex-col items-center  w-full max-sm:w-11/12 h-[368px] mx-auto bg-black shadow-container'
   const styleIcons = 'text-primary-200 h-[100px] w-24'
   const title = 'text-5xl font-bold'
   const contest = 'text-center mt-8 text-[17px]'

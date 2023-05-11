@@ -38,12 +38,12 @@ const banner = () => {
 
 
   return (
-    <div className='h-screen w-full relative font-inter'>
-      <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-full brightness-60 
-      relative" ></div>
-       
-       <div className="absolute top-60 w-full ease-in" 
-            style={{transform: `translateY(${offset * 0.8}px)`}}>
+      
+    <section className='h-screen w-full relative font-inter'>
+       <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-screen w-full
+       brightness-60 relative" ></div>
+
+       <div className="absolute top-52 w-full" style={{transform: `translateY(${offset * 1}px)`}}>
 
                <div className="flex flex-col items-center w-7 absolute left-16 
                top-72 max-md:hidden">
@@ -55,19 +55,20 @@ const banner = () => {
           <div className="flex flex-row gap-10 justify-evenly items-center w-8/12 h-[430px] mx-auto 
           max-lg:flex-col max-lg:items-center max-lg:gap-12 max-lg:justify-center">
             
-               <div className="flex flex-col justify-start min-w-[448px] text-white max-lg:items-center">
+               <div className="flex flex-col justify-start min-w-[15%] text-white 
+               max-lg:items-center max-sm:">
                    <img 
                    className="w-28 h-28 animate-downUpAnimation"
                    src={astronautaRocket}
                    alt="astronauta em uma rocket" 
                    />
        
-                   <div className="border border-gray-300 text-center py-2.5 w-72 bg-gradient-to-r
+                   <div className="border border-gray-300 text-center py-2.5 w-[279px] bg-gradient-to-r
                    from-primary-100 to-secondary-200">
-                      <span className="font-bold text-lg">Bem vindo ao meu portfólio!</span>
+                      <span className="font-bold text-lg max-sm:text-base ">Bem vindo ao meu portfólio!</span>
                    </div>
        
-                   <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center">
+                   <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center max-sm:text-4xl">
                     Oi!Sou Richard,
                       <p className="text-primary-200 max-w-xs max-lg:text-left">
                         {scrolled ? "" :
@@ -98,7 +99,7 @@ const banner = () => {
           </div>
 
       </div>
-    </div>
+    </section>
   )
 }
 

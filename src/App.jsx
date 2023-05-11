@@ -2,7 +2,8 @@ import './App.css'
 import NavBar from './components/navBar'
 import Banner from './components/banner'
 import AboutMe from './components/aboutMe'
-import Skills from './components/skills'
+import Skills from './components/skills/skills'
+import Projects from './components/projects'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               >
                  <AboutMe />
                  <Skills />
+                 <Projects />
               </div>
            </main>
         </>

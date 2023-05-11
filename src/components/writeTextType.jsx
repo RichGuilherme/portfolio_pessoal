@@ -9,7 +9,7 @@ export const WriteTextType = ({texto, cursor = true, loops = {}}) => {
  })
 
   return (
-     <span className='max-w-xs'>
+     <span >
        {text}
       {cursor ? <Cursor cursorStyle='|'/> 
       : ""}

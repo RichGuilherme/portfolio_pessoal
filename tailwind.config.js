@@ -37,8 +37,8 @@ export default {
       },
       animation : {
           downUpAnimation : 'downUpAnimation 3s linear infinite alternate',
-          boxLinguageAnim1 : "boxLinguageAnim1 25s ease-in-out infinite alternate;",
-          boxLinguageAnim2 : "boxLinguageAnim2 25s ease-in-out infinite alternate;"
+          boxLinguageAnim1 : "boxLinguageAnim1 35s linear infinite;",
+          boxLinguageAnim2 : "boxLinguageAnim2 35s linear infinite ;"
       },
       keyframes : {
           downUpAnimation : {
@@ -47,12 +47,12 @@ export default {
            "100%" : {transform: "translateY(20px)"}
       },
          boxLinguageAnim1 : {
-           "from" : {transform: "translateX(-52%)"},
-           "to" : {transform: "translateX(0%)"}
+           "from" : {transform: "translateX(0px);"},
+           "to" : {transform: "translateX(calc(-373px*3))"}
          },
          boxLinguageAnim2 :{
-          "from" : {transform: "translateX(0%)"},
-          "to" : {transform: "translateX(-52%)"}
+           "from" : {transform: "translateX(0px);"},
+           "to" : {transform: "translateX(calc(373px*3))"}
          }
     },
   },
