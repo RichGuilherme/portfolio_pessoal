@@ -5,18 +5,18 @@ import BoxsAnimat from './boxsAnimat'
 const skills = () => {
   return (
 
-    <section className='flex flex-col items-center w-full font-jost 
-     text-white relative mt-32 '>
+    <section className='flex flex-col items-center w-full font-jost text-white 
+    relative mt-32 '>
         <h1>Habilidades</h1>
 
         <img 
-        className='w-[380px] h-[365px] max-sm:max-w-[250px] max-sm:max-h-[230px] absolute 
-        right-8 bottom-20 z-[-1] max-sm:bottom-8 animate-downUpAnimation'
+        className='w-[250px] h-[230px] sm:max-w-[380px] sm:max-h-[365px] absolute 
+        right-8 bottom-20 z-[-1] max-sm:bottom-8 animate-planeteDownUpAnimation'
         src={planetaVermelhor}
         alt="planeta vermelho"
         />
 
-        <div className='max-w-[1024px] relative mt-20 overflow-hidden max-lg:w-full'>
+        <div className='max-w-full relative mt-20 overflow-hidden lg:w-[1134px]'>
                <BoxsAnimat />
         </div>
 

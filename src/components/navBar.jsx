@@ -71,7 +71,7 @@ const navBar = () => {
                    <button className='border border-white py-5 px-9 relative group'>
 
                         <div className='absolute bg-white w-0 h-full top-0 left-0 duration-300
-                          group-hover:flex group-hover:duration-300 
+                          group-hover:block group-hover:duration-300 
                           group-hover:w-full'>
                         </div>
 

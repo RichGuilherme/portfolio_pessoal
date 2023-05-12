@@ -43,7 +43,10 @@ const banner = () => {
        <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-screen w-full
        brightness-60 relative" ></div>
 
-       <div className="absolute top-52 w-full" style={{transform: `translateY(${offset * 1}px)`}}>
+      {scrolled ? "":
+              <div className="absolute top-52 w-full" 
+              style={{transform: `translateY(${offset * 1}px)`}}> 
+      
 
                <div className="flex flex-col items-center w-7 absolute left-16 
                top-72 max-md:hidden">
@@ -92,13 +95,13 @@ const banner = () => {
                </div>
 
                <img 
-               className="w-5/12 h-11/12 drop-shadow-3xl max-md:hidden"
+               className="w-5/12 h-11/12 drop-shadow-3xl hidden md:block"
                src={bannerAstronauta}
                alt="astronauta trabalhando em frente o computador" 
                />
           </div>
 
-      </div>
+      </div>}
     </section>
   )
 }

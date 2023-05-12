@@ -37,6 +37,7 @@ export default {
       },
       animation : {
           downUpAnimation : 'downUpAnimation 3s linear infinite alternate',
+          planeteDownUpAnimation : 'downUpAnimation 8s linear infinite alternate',
           boxLinguageAnim1 : "boxLinguageAnim1 35s linear infinite;",
           boxLinguageAnim2 : "boxLinguageAnim2 35s linear infinite ;"
       },
@@ -48,11 +49,11 @@ export default {
       },
          boxLinguageAnim1 : {
            "from" : {transform: "translateX(0px);"},
-           "to" : {transform: "translateX(calc(-373px*3))"}
+           "to" : {transform: "translateX(calc(-378px*3))"}
          },
          boxLinguageAnim2 :{
            "from" : {transform: "translateX(0px);"},
-           "to" : {transform: "translateX(calc(373px*3))"}
+           "to" : {transform: "translateX(calc(378px*3))"}
          }
     },
   },
