@@ -1,4 +1,5 @@
-import logoRichard from '../assets/logoRichard-280x680.png'
+/* eslint-disable react-hooks/rules-of-hooks */
+import logo from '../assets/logoRichard-280x680.png'
 import bandeiraBrasil from '../assets/iconsBandeiras/brazil.svg'
 import bandeiraUSA from '../assets/iconsBandeiras/USA.svg'
 import IconsRedeSocais from './iconsRedeSocais';
@@ -9,6 +10,7 @@ import { useEffect, useState } from "react"
 
 const navBar = () => {
   const [nav, setNav] = useState(false)
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -46,14 +48,15 @@ const navBar = () => {
 
   return (
 
-     <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black" : ""} ease-linear duration-700`}>
+     <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black" : ""} 
+     ease-linear duration-700`}>
         <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 
         max-lg:w-10/12 my-1 '>
 
             <div className='w-40 h-16 min-w-40 mr-5 mb-5'>
                 <img 
-                src={logoRichard} 
-                alt="my logo" /> 
+                src={logo} 
+                alt="minha logo" /> 
             </div>
     
             <nav className='flex flex-row justify-between items-center gap-10 max-lg:hidden'>
@@ -70,8 +73,8 @@ const navBar = () => {
 
                    <button className='border border-white py-5 px-9 relative group'>
 
-                        <div className='absolute bg-white w-0 h-full top-0 left-0 duration-300
-                          group-hover:block group-hover:duration-300 
+                        <div className='absolute bg-white w-0 h-full top-0 left-0 duration-500
+                          group-hover:block group-hover:duration-500 
                           group-hover:w-full'>
                         </div>
 

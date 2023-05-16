@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { FiArrowRight } from "react-icons/fi"
 
 import bannerAstronauta from "../assets/astronauta-fofo.png"
@@ -45,7 +46,7 @@ const banner = () => {
 
       {scrolled ? "":
               <div className="absolute top-52 w-full" 
-              style={{transform: `translateY(${offset * 1}px)`}}> 
+              style={{transform: `translateY(${offset * 0.8}px)`}}> 
       
 
                <div className="flex flex-col items-center w-7 absolute left-16 

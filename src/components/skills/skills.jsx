@@ -11,7 +11,7 @@ const skills = () => {
 
         <img 
         className='w-[250px] h-[230px] sm:max-w-[380px] sm:max-h-[365px] absolute 
-        right-8 bottom-20 z-[-1] max-sm:bottom-8 animate-planeteDownUpAnimation'
+        right-8 bottom-52 z-[-1] max-sm:bottom-20 animate-planeteDownUpAnimation'
         src={planetaVermelhor}
         alt="planeta vermelho"
         />

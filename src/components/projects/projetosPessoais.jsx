@@ -66,12 +66,13 @@ const listProjetcs = [
   return (
     <div className = {`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto`}>
        {listProjetcs.map(itens => (
-        <a href={itens.href} key={itens.id} className = "rounded-3xl h-[270px] w-full relative max-w-sm group hover: ">
+        <a href={itens.href} key={itens.id} className="h-[270px] w-full relative 
+        max-w-sm group ">
            <img 
-           className = "object-cover object-center h-full rounded-3xl "
+           className = "object-cover object-center h-full "
            src={itens.img}
            alt={itens.alt} />
-
+           
            <span className = {fundoHover}>
                <h2 className = {titleHover}>
                 {itens.title}</h2>
@@ -79,6 +80,7 @@ const listProjetcs = [
                <p className = {descritionHover}>
                 {itens.descrition}</p>
            </span>
+
         </a>
        ))}
       

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import ProjetosPessoais from './projetosPessoais'
 import Certificados from './certificados'
 
@@ -26,7 +27,7 @@ const projects = () => {
 
   return (
     <section className="flex flex-col items-center w-full font-jost
-    text-white relative mt-56">
+    text-white relative mt-48">
             <h1>Projetos</h1>
 
             <img 
@@ -47,7 +48,7 @@ const projects = () => {
                  Certificados</div>
            </nav>
 
-           <div className='w-full mt-20'>
+           <div className='w-full mt-20 mb-32'>
                <ProjetosPessoais  OnOff={showProjectsP}/>
                <Certificados OnOff={showCertif} />
            </div>
