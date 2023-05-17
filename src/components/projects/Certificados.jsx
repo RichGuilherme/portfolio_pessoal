@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react'
 import logicaDaProgramação from '../../assets/certificados/certificado-lógica-da-programação.jpg'
 
 
-const certificados = ({OnOff = false}) => {
+const Certificados = ({OnOff = false}) => {
   const [on, setOn] = useState(false)
 
   useEffect(() => {
@@ -87,4 +88,4 @@ const certificados = ({OnOff = false}) => {
   )
 }
 
-export default certificados
+export default Certificados

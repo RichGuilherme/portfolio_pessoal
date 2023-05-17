@@ -1,11 +1,11 @@
 import './App.css'
-import NavBar from './components/navBar'
-import Banner from './components/banner'
-import AboutMe from './components/aboutMe'
-import Skills from './components/skills/skills'
-import Projects from './components/projects/projects'
-import Contact from './components/contact'
-import Footer from './components/footer'
+import NavBar from './components/NavBar'
+import Banner from './components/Banner'
+import AboutMe from './components/AboutMe'
+import Skills from './components/skills/Skills'
+import Projects from './components/projects/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
               <Banner />
               {/* Fundo de estrelas */}
               <div className='bg-space bg-cover bg-center bg-no-repeat h-full relative z-10' >
-            {/* // style={{transform: `translateY(${-offset * 0.8}px)`}} */}
+             {/* style={{transform: `translateY(${-offset * 0.8}px)`}} */}
                  <AboutMe />
                  <Skills />
                  <Projects />

@@ -1,8 +1,8 @@
 import planetaVermelhor from '../../assets/planeta-vermelho.png'
 
-import BoxsAnimat from './boxsAnimat'
+import BoxsAnimat from './BoxsAnimat'
 
-const skills = () => {
+const Skills = () => {
   return (
 
     <section className='flex flex-col items-center w-full font-jost text-white 
@@ -24,4 +24,4 @@ const skills = () => {
   )
 }
   
-export default skills
+export default Skills

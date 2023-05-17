@@ -1,7 +1,7 @@
 import { IoIosSchool, IoIosMusicalNotes} from 'react-icons/io'
 import { IoCodeSlashOutline} from 'react-icons/io5'
 
-const aboutMe = () => {
+const AboutMe = () => {
   const container = 'flex flex-col items-center  w-11/12 sm:w-full h-[368px] mx-auto bg-black shadow-container'
   const styleIcons = 'text-primary-200 h-[100px] w-24'
   const title = 'text-5xl font-bold'
@@ -43,4 +43,4 @@ const aboutMe = () => {
   )
 }
 
-export default aboutMe
+export default AboutMe

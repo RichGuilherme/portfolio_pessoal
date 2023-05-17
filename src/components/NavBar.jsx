@@ -2,24 +2,23 @@
 import logo from '../assets/logoRichard-280x680.png'
 import bandeiraBrasil from '../assets/iconsBandeiras/brazil.svg'
 import bandeiraUSA from '../assets/iconsBandeiras/USA.svg'
-import IconsRedeSocais from './iconsRedeSocais';
+import IconsRedeSocais from './IconsRedeSocais';
 
 import { IoIosArrowDown, IoIosClose, IoIosMenu } from "react-icons/io";
 
 import { useEffect, useState } from "react"
 
-const navBar = () => {
+const NavBar = () => {
   const [nav, setNav] = useState(false)
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
      const onScroll = () => {
        if(window.scrollY > 50){
          setScrolled(true)
-         
-       }else{
+       }else {
          setScrolled(false)
+
        }
      }
 
@@ -136,4 +135,4 @@ const navBar = () => {
   )
 }
 
-export default navBar
+export default NavBar

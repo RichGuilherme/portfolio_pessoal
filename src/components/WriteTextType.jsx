@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Cursor, useTypewriter} from 'react-simple-typewriter'
 
 export const WriteTextType = ({texto, cursor = true, loops = {}}) => {

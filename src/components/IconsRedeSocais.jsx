@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi"
 import { FaWhatsapp } from 'react-icons/fa'
 
-const iconsRedeSocais = ({flexDirection}) => {
+const IconsRedeSocais = ({flexDirection}) => {
    const direction = flexDirection
 
     const redeSociais = [
@@ -37,4 +38,4 @@ const iconsRedeSocais = ({flexDirection}) => {
   )
 }
 
-export default iconsRedeSocais
+export default IconsRedeSocais

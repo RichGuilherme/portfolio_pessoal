@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import ProjetosPessoais from './projetosPessoais'
-import Certificados from './certificados'
+import ProjetosPessoais from './ProjetosPessoais'
+import Certificados from './Certificados'
 
 import planetaRochoso from '../../assets/planeta-rochoso.png'
 import { useState } from 'react'
 
-const projects = () => {
+const Projects = () => {
   const [showProjectsP, setShowProjectsP] = useState(true)
   const [showCertif, setShowCertif] = useState(false)
 
@@ -56,4 +56,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects

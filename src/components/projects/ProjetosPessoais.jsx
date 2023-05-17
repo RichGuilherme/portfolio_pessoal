@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import calculadoraReact from '../../assets/projetosPessoaisImg/calculadora-react-img.png'
 import { useEffect, useState} from 'react'
 
@@ -8,9 +9,9 @@ const ProjetosPessoais = ({OnOff = true}) => {
      setOn(OnOff)
  })
 
- const fundoHover = "flex-col justify-center gap-7 px-3 text-center rounded-3xl items-center absolute top-0 left-0 h-0 w-full bg-gradient-to-r from-primary-200 to-secondary-300 duration-500 opacity-90 group-hover:flex group-hover:h-full group-hover:duration-1000 "
- const titleHover = "font-bold text-2xl opacity-0 group-hover:block group-hover:opacity-100 group-hover:duration-1000"
- const descritionHover = 'font-light text-lg opacity-0 group-hover:block group-hover:opacity-100 group-hover:duration-1000'
+ const informations = "absolute top-1/2 left-0 text-center"
+ const titleHover = "font-bold text-2xl opacity-0 group-hover:block group-hover:opacity-100 duration-700"
+ const descritionHover = 'font-light text-lg opacity-0 group-hover:block group-hover:opacity-100 duration-700'
 
 const listProjetcs = [
   {
@@ -64,16 +65,17 @@ const listProjetcs = [
  
 
   return (
-    <div className = {`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto`}>
+    <div className = {`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto `}>
        {listProjetcs.map(itens => (
-        <a href={itens.href} key={itens.id} className="h-[270px] w-full relative 
-        max-w-sm group ">
+        <a href={itens.href} key={itens.id} className="h-[270px] w-full rounded-3xl relative 
+        overflow-hidden max-w-sm before:bg-gradient-to-r from-primary-200 to-secondary-300 
+        before:opacity-75 before:w-full before:h-0 before:absolute before:duration-[900ms] 
+        hover:before:h-full group ">
            <img 
-           className = "object-cover object-center h-full "
+           className = "object-cover object-center h-full  "
            src={itens.img}
            alt={itens.alt} />
-           
-           <span className = {fundoHover}>
+           <span className = {informations}>
                <h2 className = {titleHover}>
                 {itens.title}</h2>
 

@@ -1,4 +1,4 @@
-import IconsRedeSocais from './iconsRedeSocais'
+import IconsRedeSocais from './IconsRedeSocais'
 import logo from '../assets/logoRichard-280x680.png'
 
 const Footer = () => {

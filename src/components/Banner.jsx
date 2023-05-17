@@ -4,11 +4,11 @@ import { FiArrowRight } from "react-icons/fi"
 import bannerAstronauta from "../assets/astronauta-fofo.png"
 import astronautaRocket from "../assets/astronauta-rocket.png"
 
-import IconsRedeSocais from "./iconsRedeSocais"
-import { WriteTextType } from "./writeTextType"
+import IconsRedeSocais from "./IconsRedeSocais"
+import { WriteTextType } from "./WriteTextType"
 import { useState, useEffect } from "react"
 
-const banner = () => {
+const Banner = () => {
   const [scrolled, setScrolled] = useState(false)
   const [offset, SetOffset] = useState(0)
 
@@ -107,4 +107,4 @@ const banner = () => {
   )
 }
 
-export default banner
+export default Banner

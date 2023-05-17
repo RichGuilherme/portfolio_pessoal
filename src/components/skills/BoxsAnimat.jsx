@@ -5,7 +5,7 @@ import iconJs from '../../assets/iconsLinguagens/javascript-original.svg'
 import iconReact from '../../assets/iconsLinguagens/react-original.svg'
 import iconGit from '../../assets/iconsLinguagens/git-original.svg'
 
-const boxsAnimat = () => {
+const BoxsAnimat = () => {
     const boxsTec = 'grid grid-cols-[52px_minmax(257px,_2fr)] grid-rows-2 items-center h-24 bg-secondary-300 border border-primary-200 rounded-[10px] py-3 px-2 gap-x-1'
     const imgTec = 'w-[54px] h-[52px] float-right'
     const titleTec = 'text-xl font-bold mb-3'
@@ -132,4 +132,4 @@ const boxsAnimat = () => {
   )
 }
 
-export default boxsAnimat
+export default BoxsAnimat
