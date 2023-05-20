@@ -2,7 +2,7 @@
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi"
 import { FaWhatsapp } from 'react-icons/fa'
 
-const IconsRedeSocais = ({ flexDirection }) => {
+const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
    const direction = flexDirection
 
    const redeSociais = [

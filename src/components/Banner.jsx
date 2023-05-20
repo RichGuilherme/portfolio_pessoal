@@ -5,30 +5,19 @@ import bannerAstronauta from "../assets/astronauta-fofo.png"
 import astronautaRocket from "../assets/astronauta-rocket.png"
 
 import IconsRedeSocais from "./IconsRedeSocais"
+import curriculoPDF from '../assets/currículo.pdf'
+
 import { WriteTextType } from "./WriteTextType"
 import { useState, useEffect } from "react"
+import useScrolled from "../hook/useScrolled"
 
 const Banner = () => {
-  const [scrolled, setScrolled] = useState(false)
   const [offset, SetOffset] = useState(0)
-
+  const [scrolled] = useScrolled(861)
 
   const handleScroll = () => SetOffset(window.pageYOffset)
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 861) {
-        setScrolled(true)
-
-      } else {
-        setScrolled(false)
-      }
-    }
-
-    window.addEventListener("scroll", onScroll)
-
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  
 
 
   useEffect(() => {
@@ -46,17 +35,20 @@ const Banner = () => {
 
       {scrolled ? "" :
         <div className="absolute top-52 w-full"
-          style={{ transform: `translateY(${offset * 0.8}px)` }}>
+          style={{ transform: `translateY(${offset * 0.9}px)` }}>
 
-
-          <div className="flex flex-col items-center w-7 absolute left-16 
+          <div 
+          data-aos="fade-down"
+          className="flex flex-col items-center w-7 absolute left-16 
                top-72 max-md:hidden">
 
             <IconsRedeSocais flexDirection="flex-col" />
             <div className="h-24 bg-white w-1 mt-10 rounded-md"></div>
           </div>
 
-          <div className="flex flex-row gap-10 justify-evenly items-center w-8/12 h-[430px] mx-auto 
+          <div 
+          data-aos="zoom-in"
+          className="flex flex-row gap-10 justify-evenly items-center w-8/12 h-[430px] mx-auto 
           max-lg:flex-col max-lg:items-center max-lg:gap-12 max-lg:justify-center">
 
             <div className="flex flex-col justify-start min-w-[15%] text-white 
@@ -82,8 +74,8 @@ const Banner = () => {
                 </p>
               </h2>
 
-              <a className="flex flex-row items-center mt-7 group cursor-pointer"
-                href="">
+              <a className="flex flex-row items-center mt-7 group cursor-pointer" 
+              href={curriculoPDF} target="_blank" rel="noreferrer">
                 <p className="text-lg font-bold">
                   Download CV
                 </p>

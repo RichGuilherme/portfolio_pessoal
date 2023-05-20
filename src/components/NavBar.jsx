@@ -26,13 +26,13 @@ const NavBar = () => {
   },
   {
     id: 3,
-    link: "Projetos",
-    href: "#projetos"
+    link: "Habilidades",
+    href: "#habilidades"
   },
   {
     id: 4,
-    link: "Habilidades",
-    href: "#habilidades"
+    link: "Projetos",
+    href: "#projetos"
   }
   ]
 
@@ -115,7 +115,9 @@ const NavBar = () => {
         </div>
 
         {nav &&
-          <aside className='w-7/12 h-screen absolute top-0 right-0 bg-black opacity-95'>
+          <aside 
+          data-aos="fade-left"
+          className='w-7/12 max-sm:w-full h-screen absolute top-0 right-0 bg-black opacity-95'>
             <ul className='h-full flex flex-col justify-center items-center gap-9 '>
               {links.map(({ id, link, href }) => (
                 <li key={id}

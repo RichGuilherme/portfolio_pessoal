@@ -28,25 +28,29 @@ const Projects = () => {
   return (
     <section id="projetos" 
     className="flex flex-col items-center w-full font-jost text-white relative mt-48">
-      <h1>Projetos</h1>
 
       <img
-        className='w-[250px] h-[230px] sm:max-w-[380px] sm:max-h-[365px] absolute left-0
-             animate-downUpAnimation ease-in-out -z-10'
+        className='w-[250px] h-[249px] sm:max-w-[380px] sm:max-h-[365px] absolute left-0
+        animate-planetaRochosoAnimation -z-10'
         src={planetaRochoso}
         alt="planeta rochoso"
       />
-
-      <p className="text-[24px] font-medium w-11/12 text-center
-            mt-5 ">
-        Esse são alguns projetos e certificados acadêmicos</p>
-
-      <nav className="flex items-center justify-center mt-10">
-        <div onClick={handleShowProjectsP} className={navItens + " rounded-l-full"}>
-          Projetos pessoais</div>
-        <div onClick={handleShowCertif} className={navItens + " rounded-r-full"} >
-          Certificados</div>
-      </nav>
+      <div 
+      data-aos="fade-up" data-aos-delay="150"
+      className='flex flex-col items-center'>
+          <h1>Projetos</h1>
+    
+          <p className="text-[24px] font-medium w-11/12 text-center
+                mt-5 ">
+            Esse são alguns projetos e certificados acadêmicos</p>
+    
+          <nav className="flex items-center justify-center mt-10">
+            <div onClick={handleShowProjectsP} className={navItens + " rounded-l-full"}>
+              Projetos pessoais</div>
+            <div onClick={handleShowCertif} className={navItens + " rounded-r-full"} >
+              Certificados</div>
+          </nav>
+      </div>
 
       <div className='w-full mt-20 mb-32'>
         <ProjetosPessoais OnOff={showProjectsP} />

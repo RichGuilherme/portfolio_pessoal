@@ -66,8 +66,11 @@ const BoxsAnimat = () => {
     after:absolute after:h-60 after:w-[85px] after:z-10 after:bg-gradient-to-r after:from-black after:to-transparent after:top-0 after:right-0 after:rotate-180'>
 
             {/* primeira linha com as linguagens */}
-            <div name="row One" className='flex items-center w-[calc(378px*6)] gap-8
-        animate-boxLinguageAnim1 '> {/*o 378px representa a soma do 346px da box + o gap de 32px*/}
+            <div name="row One" 
+            data-aos="fade-left"
+            className='flex items-center w-[calc(378px*6)] gap-8
+           animate-boxLinguageAnim1 '> {/*o 378px representa a soma do 346px da box + o gap de 32px*/}
+
                 {tecsSlideRowOne.map(({ id, img, alt, title, descrition }) => (
                     <div className={boxsTec} key={id}>
                         <div className='row-span-2'>
@@ -98,7 +101,9 @@ const BoxsAnimat = () => {
             </div>
 
             {/* Segunda linha com as linguagens */}
-            <div name="row Two" className='flex items-center w-[calc(378px*6)] gap-8 relative right-[1134px]
+            <div name="row Two" 
+            data-aos="fade-right"
+            className='flex items-center w-[calc(378px*6)] gap-8 relative right-[1134px]
          animate-boxLinguageAnim2'> {/*o 381px representa a soma do 346px da box + o gap de 32px */}
                 {tecsSlideRowTwo.map(({ id, img, alt, title, descrition }) => (
                     <div className={boxsTec} key={id}>

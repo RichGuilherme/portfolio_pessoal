@@ -66,11 +66,15 @@ const listProjetcs = [
  
 
   return (
-    <div className = {`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto `}>
+    <div 
+    
+    className = {`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto`}>
        
        {listProjetcs.map(({id, img, alt, title, descrition, github, href, tecnologias}) => (
         
-        <a key={id} className="h-[270px] w-full rounded-3xl relative before:cursor-default
+        <a 
+        data-aos="zoom-in"
+        key={id} className="h-[270px] w-full rounded-3xl relative before:cursor-default
         overflow-hidden max-w-sm before:bg-[#112240]
         before:opacity-80 before:w-full before:h-0 before:absolute before:duration-[900ms] 
         hover:before:h-full group ">

@@ -6,19 +6,17 @@ import Skills from './components/skills/Skills'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import Footer from './components/Footer'
-// import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import 'aos/dist/aos.css'
+import Aos from 'aos'
+
 
 function App() {
-
-   // const handleScroll = () => SetOffset(window.pageYOffset)
-
-
-   // useEffect(() => {
-   //    window.addEventListener("scroll", handleScroll)
-
-   //    return () => window.removeEventListener("scroll", handleScroll)
-   // }, [])
-
+   useEffect(() => {
+      Aos.init({ 
+         duration: 1700,
+               })
+   })
 
    return (
       <>

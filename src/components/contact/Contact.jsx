@@ -8,7 +8,9 @@ const Contact = () => {
     from-primary-200 to-secondary-300 flex flex-row max-lg:flex-col-reverse justify-between relative"
     id='conectar'>
 
-            <div className='flex items-end w-[47%]'>
+            <div 
+            data-aos="zoom-in" data-aos-delay="400"
+            className='flex items-end w-[47%]'>
                 <img
                     className="h-[75%] max-h-[690px] "
                     src={astronautaBackground}
@@ -16,7 +18,9 @@ const Contact = () => {
                 />
             </div>
 
-            <div className="flex flex-col items-center mt-8 w-full mx-auto ">
+            <div
+            data-aos="fade-up" data-aos-delay="400"
+            className="flex flex-col items-center mt-8 w-full mx-auto ">
                 <h1 className='text-center'>Entrar em contato</h1>
                 
                  <BoxsInformations />

@@ -37,16 +37,29 @@ export default {
       },
       animation : {
           downUpAnimation : 'downUpAnimation 3s linear infinite alternate',
-          planeteDownUpAnimation : 'downUpAnimation 8s linear infinite alternate',
+          planetaRochosoAnimation : 'planetaRochosoAnimation 20s linear infinite ',
+          planetaVermelhoAnimation : 'planetaVermelhoAnimation 10s linear infinite alternate',
           boxLinguageAnim1 : "boxLinguageAnim1 35s linear infinite;",
           boxLinguageAnim2 : "boxLinguageAnim2 35s linear infinite ;"
       },
       keyframes : {
           downUpAnimation : {
             "0%" : {},
-            "50%" : {transform: "translateY(-20px)"},
-           "100%" : {transform: "translateY(20px)"}
+            "50%" : {transform: "translateY(-20px)" },
+            "100%" : {transform: "translateY(20px)" }
       },
+         planetaRochosoAnimation : {
+          "0%" : {transform: "translateY(0px) rotate(0deg)"},
+          "50%" : {transform: "translateY(-30px) rotate(120deg)"},
+          "80%" : {transform: "translateY(30px) rotate(240deg)"},
+         "100%" : {transform: "translateY(0px) rotate(360deg)"}
+        },
+         planetaVermelhoAnimation : {
+          "0%" : {},
+          "50%" : {transform: "translateY(-20px)"},
+          "100%" : {transform: "translateY(20px)" }
+          },
+
          boxLinguageAnim1 : {
            "from" : {transform: "translateX(0px);"},
            "to" : {transform: "translateX(calc(-378px*3))"}
