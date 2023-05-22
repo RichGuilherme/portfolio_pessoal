@@ -1,0 +1,51 @@
+{
+    "translation": {
+        "navBar": [
+            {
+                "about me": "Sobre Mim",
+                "skills": "Habilidades",
+                "projects": "Projetos",
+                "connect": "Vamo Conectar"
+            }
+        ],
+        "banner": [
+            {
+                "welcome": "Bem vindo ao meu portfólio!",
+                "I'm": "Oi! Sou Richard,",
+                "web developer": "Desenvolvedor Web",
+                "front-end developer": "Desenvolvedor Front-end",
+                "icon astronaut with rocket": "astronauta em um foquete",
+                "icon astronaut in front of the computer": "astronauta de frente o computador"
+            }
+        ],
+        "about me": [
+            {
+                "education": "Educação",
+                "formation": "Tecnologo em Análise e Desenvolvimento de Sistema"
+            },
+            {
+                "experiences": "EXP Profissonal",
+                "professional experiences": "Sem experiências profissonal... "
+            },
+            {
+                "hobbies": "Hobbies",
+                "my hobbies": "Games, Músicas, Series/Animes, Acadêmia e Programação são coisas do meu dia a dia"
+            }
+        ],
+        "skills": [
+            {
+                "planet red": "planeta vermelho"
+            },
+            {
+                "tecsSlideRowOne": {
+                    "descritionCSS": "Cascading Style Shell é uma linguagem de folha de estilos",
+                    "descritionTailwind": "Framework CSS para criação de layouts usando uma estrutura de CSS pronta",
+                    "descritionHTML": "Linguagem de Marcação de Hipertexto que é a estrutura de uma página web"
+                },
+                 "tecsSlideRowTwo": {
+                    "descritionJS": "javaScript é uma linguagem de programação que impulsiona a web"
+                 }
+            }
+        ]
+    }
+}

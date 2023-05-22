@@ -1,0 +1,51 @@
+{
+    "translation": {
+        "navBar": [
+            {
+                "about me": "About Me",
+                "skills": "Skills",
+                "projects": "Projects",
+                "connect": "Let's Connect"
+            }
+        ],
+        "banner": [
+            {
+                "welcome": "Welcome to my portfolio!",
+                "I'm": "Hi! i'm Richard,",
+                "web developer": "Web developer",
+                "front-end developer": "Front-end Developer",
+                "icon astronaut with rocket": "astronaut in a rocket",
+                "icon astronaut in front of the computer": "astronaut in front of the computer"
+            }
+        ],
+        "about me": [
+            {
+                "education": "Education",
+                "formation": "Technologist in System Analysis and Development"
+            },
+            {
+                "experiences": "Work EXP",
+                "professional experiences": "No professional experiences..."
+            },
+            {
+                "hobbies": "Hobbies",
+                "my hobbies": "Games, Songs, Series/Animes, Gym and Programming are things of my day to day"
+            }
+        ],
+        "skills": [
+            {
+                "planet red": "red planet"
+            },
+            {
+                "tecsSlideRowOne": {
+                    "descritionCSS": "Cascading Style Shell (CSS) is a style sheet language",
+                    "descritionTailwind": "CSS Framework for Creating Layouts Using a Ready-Made CSS structure",
+                    "descritionHTML": "Hypertext Markup Language which is the structure of a web page"
+                },
+                "tecsSlideRowTwo": {
+                     "descritionJS": "javaScript is a programming language that drives the web"
+                }
+            }
+        ]
+    }
+}

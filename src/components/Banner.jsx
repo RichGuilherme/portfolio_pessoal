@@ -1,6 +1,4 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { FiArrowRight } from "react-icons/fi"
-
 import bannerAstronauta from "../assets/astronauta-fofo.png"
 import astronautaRocket from "../assets/astronauta-rocket.png"
 
@@ -10,15 +8,15 @@ import curriculoPDF from '../assets/currículo.pdf'
 import { WriteTextType } from "./WriteTextType"
 import { useState, useEffect } from "react"
 import useScrolled from "../hook/useScrolled"
+import { useTranslation } from "react-i18next"
+
 
 const Banner = () => {
   const [offset, SetOffset] = useState(0)
   const [scrolled] = useScrolled(861)
+  const { t } = useTranslation()
 
-  const handleScroll = () => SetOffset(window.pageYOffset)
-
-  
-
+  const handleScroll = () => SetOffset(window.pageYOffset) //variável para criar o efeito parallax
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
@@ -38,7 +36,7 @@ const Banner = () => {
           style={{ transform: `translateY(${offset * 0.9}px)` }}>
 
           <div 
-          data-aos="fade-down"
+          data-aos="fade-up"
           className="flex flex-col items-center w-7 absolute left-16 
                top-72 max-md:hidden">
 
@@ -56,19 +54,21 @@ const Banner = () => {
               <img
                 className="w-28 h-28 animate-downUpAnimation"
                 src={astronautaRocket}
-                alt="astronauta em uma rocket"
+                alt={t("banner.0.icon astronaut with rocket")}
               />
 
               <div className="border border-gray-300 text-center py-2.5 w-[279px] bg-gradient-to-r
                    from-primary-100 to-secondary-200">
-                <span className="font-bold text-lg max-sm:text-base ">Bem vindo ao meu portfólio!</span>
+                   <span className="font-bold text-lg max-sm:text-base ">
+                     {t("banner.0.welcome")}
+                   </span>
               </div>
 
               <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center max-sm:text-4xl">
-                Oi!Sou Richard,
+              {t("banner.0.I'm")}
                 <p className="text-primary-200 max-w-xs max-lg:text-left">
                   {scrolled ? "" :
-                    <WriteTextType texto={["Desenvolvedor Web", "Desenvolvedor Fron-end"]}
+                    <WriteTextType texto={[t("banner.0.web developer"), t("banner.0.front-end developer")]}
                       cursor="true" loops="{}" />
                   }
                 </p>
@@ -90,7 +90,7 @@ const Banner = () => {
             <img
               className="w-5/12 h-11/12 drop-shadow-3xl hidden md:block"
               src={bannerAstronauta}
-              alt="astronauta trabalhando em frente o computador"
+              alt={t("banner.0.icon astronaut in front of the computer")}
             />
           </div>
 

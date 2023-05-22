@@ -1,5 +1,3 @@
-
-
 const SendMensage = () => {
     return (
         <div className='grid grid-cols-2 justify-items-start max-sm:justify-items-center

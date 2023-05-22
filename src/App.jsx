@@ -1,14 +1,17 @@
 import './App.css'
-import NavBar from './components/NavBar'
+import NavBar from './components/navBar/NavBar'
 import Banner from './components/Banner'
 import AboutMe from './components/AboutMe'
 import Skills from './components/skills/Skills'
 import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import Footer from './components/Footer'
+
 import { useEffect } from 'react'
+
 import 'aos/dist/aos.css'
 import Aos from 'aos'
+
 
 
 function App() {
