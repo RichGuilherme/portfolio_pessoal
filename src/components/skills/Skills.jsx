@@ -16,7 +16,7 @@ const Skills = () => {
         className='w-[250px] h-[240px] sm:max-w-[380px] sm:max-h-[365px] absolute 
         right-8 bottom-52 z-[-1] max-sm:bottom-20 animate-planetaVermelhoAnimation animate-planetaVermelhoAnimationRotate'
         src={planetaVermelho}
-        alt={t("skills.0.planet red")}
+        alt={t("skills.0.red planet")}
       />
 
       <div className='max-w-full relative mt-20 overflow-hidden lg:w-[1134px]'>

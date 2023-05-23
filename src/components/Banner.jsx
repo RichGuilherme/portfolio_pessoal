@@ -31,7 +31,7 @@ const Banner = () => {
       <div className="bg-banner bg-cover bg-center bg-no-repeat bg-fixed h-screen w-full
        brightness-60 relative" ></div>
 
-      {scrolled ? "" :
+
         <div className="absolute top-52 w-full"
           style={{ transform: `translateY(${offset * 0.9}px)` }}>
 
@@ -94,7 +94,7 @@ const Banner = () => {
             />
           </div>
 
-        </div>}
+        </div>
     </section>
   )
 }

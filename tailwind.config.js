@@ -62,11 +62,11 @@ export default {
 
          boxLinguageAnim1 : {
            "from" : {transform: "translateX(0px);"},
-           "to" : {transform: "translateX(calc(-378px*3))"}
+           "to" : {transform: "translateX(calc(-388px*3))"}
          },
          boxLinguageAnim2 :{
            "from" : {transform: "translateX(0px);"},
-           "to" : {transform: "translateX(calc(378px*3))"}
+           "to" : {transform: "translateX(calc(388px*3))"}
          }
     },
   },

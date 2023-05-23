@@ -1,7 +1,10 @@
 import { MdWhatsapp, MdLocationOn } from 'react-icons/md'
 import { IoIosSend } from 'react-icons/io'
+import { useTranslation } from 'react-i18next'
 
 const BoxsInformations = () => {
+    const {t} = useTranslation()
+
     return (
         <div className='flex flex-wrap justify-center gap-4 w-full max-w-[955px] mt-10'>
             <div className='bg-secondary-200 flex flex-col gap-1 justify-center w-full rounded-lg
@@ -32,7 +35,7 @@ const BoxsInformations = () => {
                 <div className='flex flex-row items-center gap-1'>
                     <MdLocationOn size={22} className='text-red-600' />
                     <h2 className='font-bold text-xl'>
-                        Localização</h2>
+                        {t("contact.1.boxs informations.location")}</h2>
                 </div>
 
                 <p

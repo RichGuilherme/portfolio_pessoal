@@ -43,8 +43,76 @@
                     "descritionHTML": "Linguagem de Marcação de Hipertexto que é a estrutura de uma página web"
                 },
                  "tecsSlideRowTwo": {
-                    "descritionJS": "javaScript é uma linguagem de programação que impulsiona a web"
+                    "descritionJS": "JavaScript é uma linguagem de programação que impulsiona a web",
+                    "descritionReact": "Uma biblioteca javascript usada para criar a interface do usuário",
+                    "descritionGit": "É o sistema de controle de versão open source mais usado no mundo atualmente!"
                  }
+            }
+        ],
+        "projects": [
+           {
+               "rocky planet" : "planeta rochoso",
+               "projects and certificates": "Esse são alguns projetos e certificados acadêmicos",
+               "personal projects": "Projetos pessoais",
+               "certificates": "Certificados"
+           },
+           {
+               "react calculator": {
+                   "title": "Calculadora React",
+                   "descrition": "Projeto de uma calculadora feita com react, que possui um thema dark e light"
+               },
+               "weather project": {
+                   "descrition": "Projeto que mostra os detalhed do clima de alguma região usando a Api OpenWeatherMap"
+               },
+               "lol pages": {
+                   "descrition": "Reimaginação da página do jogo League Of Legends"
+               },
+               "personal portfolio": {
+                   "title": "Portfólio Pessoal",
+                   "descrition": "Meu primeiro portfólio pessoal"
+               }
+           },
+           {
+               "programming logic": {
+                    "title": "Lógica da Programação",
+                    "descrition": "curso completo de lógica da programação"
+               },
+                "web css": {
+                     "title": "Css Web",
+                     "descrition": "Conceitos abordados no curso:Animações 2d e 3d · Estilização · Pseudo-class e Pseudo-elementos · CSS Grid Layout · Flexbox · Reponsividade · Boas práticas e convenção no Css"
+                },
+                "react fundamentals": {
+                     "title": "Fundamentos React",
+                     "descrition": "Curso dos os primeiros passos na biblioteca"
+                },
+                "basic hooks": {
+                    "title": "Hooks Básico React",
+                    "descrition": "Aprende um pouco sobre os principais hooks no react"
+                },
+                "js advanced": {
+                    "title": "Javascript Avançado",
+                    "descrition": "Conceitos avançados abordados:Variáveis, Escopo e Tipos de dados no JavaScript · Orientação a Protótipo · Funções e Manipulação de Listas · Promises e Assincronismo "
+                }
+           }
+        ],
+        "contact" : [
+            {"get in touch": "Entrar em Contato"},
+            {
+                "boxs informations": {
+                    "location": "Localização"
+                },
+                "send message": {
+                    "your name": "Seu Nome...",
+                    "your e-mail": "Seu E-mail...",
+                    "your message": "Sua Mensagem...",
+                    "send message": "Enviar Mensagem"
+                }
+            }
+        ],
+        "footer":[
+            {
+                "my logo": "minha logo",
+                "copyright": "Todos os direitos reservados. Site desenvolvido por RichGuilherme"
             }
         ]
     }

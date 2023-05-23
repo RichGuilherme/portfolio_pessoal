@@ -1,14 +1,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+
 import ProjetosPessoais from './ProjetosPessoais'
 import Certificados from './Certificados'
 
 import planetaRochoso from '../../assets/planeta-rochoso.png'
-import { useState } from 'react'
 
 const Projects = () => {
   const [showProjectsP, setShowProjectsP] = useState(true)
   const [showCertif, setShowCertif] = useState(false)
-
+  const {t} = useTranslation()
+ 
   const handleShowProjectsP = () => {
     if (showProjectsP === false) {
       setShowProjectsP(true)
@@ -22,7 +25,7 @@ const Projects = () => {
     setShowProjectsP(false)
   }
 
-  const navItens = "min-w-[71%] sm:min-w-[100%] h-14 border border-primary-200 font-medium text-center pt-4 hover:bg-gradient-to-r from-primary-100 to-secondary-200 cursor-pointer"
+  const navItens = "min-w-[71%] sm:min-w-[100%] h-14 border border-primary-200 font-medium text-center text-lg pt-4 hover:bg-gradient-to-r from-primary-100 to-secondary-200 cursor-pointer"
 
 
   return (
@@ -33,22 +36,22 @@ const Projects = () => {
         className='w-[250px] h-[249px] sm:max-w-[380px] sm:max-h-[365px] absolute left-0
         animate-planetaRochosoAnimation -z-10'
         src={planetaRochoso}
-        alt="planeta rochoso"
+        alt={t("projects.0.rocky planet")}
       />
       <div 
       data-aos="fade-up" data-aos-delay="150"
       className='flex flex-col items-center'>
-          <h1>Projetos</h1>
+          <h1>{t("navBar.0.projects")}</h1>
     
           <p className="text-[24px] font-medium w-11/12 text-center
                 mt-5 ">
-            Esse são alguns projetos e certificados acadêmicos</p>
+           {t("projects.0.projects and certificates")}</p>
     
           <nav className="flex items-center justify-center mt-10">
             <div onClick={handleShowProjectsP} className={navItens + " rounded-l-full"}>
-              Projetos pessoais</div>
+            {t("projects.0.personal projects")}</div>
             <div onClick={handleShowCertif} className={navItens + " rounded-r-full"} >
-              Certificados</div>
+            {t("projects.0.certificates")}</div>
           </nav>
       </div>
 

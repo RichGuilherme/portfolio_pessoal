@@ -1,4 +1,8 @@
-const SendMensage = () => {
+import { useTranslation } from "react-i18next"
+
+const SendMessage = () => {
+    const {t} = useTranslation()
+
     return (
         <div className='grid grid-cols-2 justify-items-start max-sm:justify-items-center
     w-full max-sm:grid-cols-1 max-w-[660px] max-h-[425px] gap-y-6 gap-x-2 mt-10 mx-auto'>
@@ -6,26 +10,26 @@ const SendMensage = () => {
                 type='text'
                 className='w-full max-w-[322px] h-16 bg-[#ffffff1a] text-white rounded-[20px] 
           pl-4 outline-none focus:border focus:border-white'
-                placeholder='Seu Nome...' />
+                placeholder={t("contact.1.send message.your name")} />
 
             <input
                 type='email'
                 className='w-full max-w-[322px] h-16 bg-[#ffffff1a] text-white rounded-[20px]
           pl-4 outline-none focus:border focus:border-white'
-                placeholder='Seu E-mail...' />
+                placeholder={t("contact.1.send message.your e-mail")} />
 
             <input
                 type='text'
                 className='w-full max-w-[652px] h-48 bg-[#ffffff1a] col-span-2 max-sm:col-span-1
          rounded-[20px] pl-4 outline-none focus:border focus:border-white'
-                placeholder='Sua Mensagem...' />
+                placeholder={t("contact.1.send message.your message")} />
 
             <button className='border border-[#ffffff1a] w-[145px] h-[45px] bg-[#ffffff1a] 
          relative before:absolute before:top-0 before:w-0 before:h-full before:left-0 before:duration-500 
          before:bg-white hover:before:w-full group'>
 
                 <span className='group-hover:text-black group-hover:z-10 group-hover:relative'>
-                    Enviar Mensagem
+                   {t("contact.1.send message.send message")}
                 </span>
                 
             </button>
@@ -33,4 +37,4 @@ const SendMensage = () => {
     )
 }
 
-export default SendMensage
+export default SendMessage

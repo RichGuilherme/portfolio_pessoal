@@ -1,5 +1,5 @@
 import './App.css'
-import NavBar from './components/navBar/NavBar'
+import Header from './components/header/Header'
 import Banner from './components/Banner'
 import AboutMe from './components/AboutMe'
 import Skills from './components/skills/Skills'
@@ -23,7 +23,7 @@ function App() {
 
    return (
       <>
-         <NavBar />
+         <Header />
          <main >
             <Banner />
             {/* Fundo de estrelas */}

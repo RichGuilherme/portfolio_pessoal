@@ -10,7 +10,7 @@ import logo from '../../assets/logoRichard-280x680.png'
 import IconsRedeSocais from '../IconsRedeSocais';
 
 
-const NavBar = () => {
+const Header = () => {
   const [navMobile, setNavMobile] = useState(false)
   const {t} = useTranslation()
   const [scrolled] = useScrolled(50)
@@ -131,4 +131,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Header

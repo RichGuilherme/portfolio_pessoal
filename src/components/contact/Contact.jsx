@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next'
 import astronautaBackground from '../../assets/imagem-astronauta.svg'
 import BoxsInformations from './BoxsInformations'
-import SendMensage from './SendMensage'
+import SendMessage from './SendMensage'
 
 const Contact = () => {
+    const {t} = useTranslation()
+
     return (
         <section className="w-full lg:h-[calc(100vh-200px)] h-full font-jost bg-gradient-to-r text-white
     from-primary-200 to-secondary-300 flex flex-row max-lg:flex-col-reverse justify-between relative"
@@ -21,10 +24,10 @@ const Contact = () => {
             <div
             data-aos="fade-up" data-aos-delay="400"
             className="flex flex-col items-center mt-8 w-full mx-auto ">
-                <h1 className='text-center'>Entrar em contato</h1>
+                <h1 className='text-center'>{t("contact.0.get in touch")}</h1>
                 
                  <BoxsInformations />
-                 <SendMensage />
+                 <SendMessage />
 
             </div>
         </section>
