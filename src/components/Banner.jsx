@@ -67,7 +67,7 @@ const Banner = () => {
 
               <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center max-sm:text-4xl">
               {t("banner.0.I'm")}
-                <p className="text-primary-200 max-w-xs max-lg:text-left">
+                <p className="text-primary-200 max-w-[330px] max-lg:text-left">
                   {scrolled ? "" :
                     <WriteTextType texto={[t("banner.0.web developer"), t("banner.0.front-end developer")]}
                       cursor="true" loops="{}" />
@@ -78,7 +78,7 @@ const Banner = () => {
               <a className="flex flex-row items-center mt-7 group cursor-pointer" 
               href={curriculoPDF} target="_blank" rel="noreferrer">
                 <p className="text-lg font-bold">
-                  Download CV
+                  {t("banner.0.resume")}
                 </p>
 
                 <span className="border border-white rounded-full ml-1 duration-300 group-hover:ml-3 

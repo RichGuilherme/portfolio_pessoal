@@ -2,7 +2,7 @@
     "translation": {
         "navBar": [
             {
-                "about me": "About Me",
+                "about me": "About",
                 "skills": "Skills",
                 "projects": "Projects",
                 "connect": "Let's Connect"
@@ -12,13 +12,15 @@
             {
                 "welcome": "Welcome to my portfolio!",
                 "I'm": "Hi! i'm Richard,",
-                "web developer": "Web developer",
-                "front-end developer": "Front-end Developer",
+                "web developer": "Web Developer",
+                "front-end developer": "Front-End Developer",
                 "icon astronaut with rocket": "astronaut in a rocket",
-                "icon astronaut in front of the computer": "astronaut in front of the computer"
+                "icon astronaut in front of the computer": "astronaut in front of the computer",
+                "resume" : "Resume"
             }
         ],
         "about me": [
+            {"title" : "About Me"},
             {
                 "education": "Education",
                 "formation": "Technologist in System Analysis and Development"

@@ -22,12 +22,13 @@ html, body {
 
   ::-webkit-scrollbar-thumb {
     background-color: #6E43CB;
-    border: 3px solid  #14142B;
+    border: 1px solid  #14142B;
     border-radius: 10px;
   }
 
 h1 {
-    font-size: 48px;
+    font-size: 53px;
     font-weight: bold;
+    letter-spacing: 0.5px;
     color: #6E43CB;
 }

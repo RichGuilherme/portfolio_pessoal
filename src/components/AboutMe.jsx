@@ -17,7 +17,7 @@ const AboutMe = () => {
          className='flex flex-col items-center w-full font-jost text-white relative '>
 
          <h1 className='mt-36' data-aos="fade-up">
-            {t("navBar.0.about me")}
+            {t("about me.0.title")}
          </h1>
 
          <div
@@ -25,26 +25,26 @@ const AboutMe = () => {
          2xl:grid-cols-3">
             <div className={container} data-aos="zoom-in">
                <IoIosSchool className={styleIcons} />
-               <h2 className={title} >{t("about me.0.education")}</h2>
+               <h2 className={title} >{t("about me.1.education")}</h2>
                <p className={contest}>
-                  {t("about me.0.formation")}<br></br>
+                  {t("about me.1.formation")}<br></br>
                   Jan/22 - Jul/24
                </p>
             </div>
 
             <div className={container} data-aos="zoom-in">
                <IoCodeSlashOutline className={styleIcons} />
-               <h2 className={title} >{t("about me.1.experiences")}</h2>
+               <h2 className={title} >{t("about me.2.experiences")}</h2>
                <p className={contest}>
-                  {t("about me.1.professional experiences")}
+                  {t("about me.2.professional experiences")}
                </p>
             </div>
 
             <div className={container} data-aos="zoom-in">
                <IoIosMusicalNotes className={styleIcons} />
-               <h2 className={title} >{t("about me.2.hobbies")}</h2>
+               <h2 className={title} >{t("about me.3.hobbies")}</h2>
                <p className={contest}>
-                  {t("about me.2.my hobbies")}
+                  {t("about me.3.my hobbies")}
                </p>
             </div>
 

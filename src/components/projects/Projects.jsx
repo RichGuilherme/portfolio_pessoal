@@ -25,7 +25,7 @@ const Projects = () => {
     setShowProjectsP(false)
   }
 
-  const navItens = "min-w-[71%] sm:min-w-[100%] h-14 border border-primary-200 font-medium text-center text-lg pt-4 hover:bg-gradient-to-r from-primary-100 to-secondary-200 cursor-pointer"
+  const navItens = "min-w-[71%] sm:min-w-[100%] h-14 border border-primary-200 font-medium text-center text-lg tracking-wider pt-4 hover:bg-gradient-to-r from-primary-100 to-secondary-200 cursor-pointer"
 
 
   return (

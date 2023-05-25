@@ -49,15 +49,17 @@ const Header = () => {
   )
 
   const Nav = (
-    <nav className='flex flex-row justify-between items-center gap-10 max-lg:hidden'>
+    <nav className='flex flex-row justify-between items-center gap-10'>
       <ul className='flex flex-row justify-between items-center gap-10'>
         {links.map(({ id, link, href }) => (
           <li key={id}
-            className='text-lg text-white text-center font-inter 
+            className='text-lg text-white font-inter max-w-[100px] relative  
                                 cursor-default'
           >
             <a href={href}
-              className='hover:text-primary-200 h-full w-full block'
+              className=' h-full w-full block break-normal
+              after:w-full after:h-[1px] after:bg-white after:block after:scale-0 
+              after:transition-transform after:duration-500 hover:after:scale-100'
             >
               {link}</a>
           </li>
@@ -82,21 +84,22 @@ const Header = () => {
     <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black" : ""} 
      ease-linear duration-700`}>
 
-      <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 
-        max-lg:w-10/12 my-1 '>
+      <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 max-xl:w-10/12
+      my-1 '>
+        
             {Logo}
 
-
-        <div className='flex flex-row items-center gap-10'>
-            {Nav}
-            <ChooseLanguage />
+            <div className="max-lg:hidden flex flex-row items-center gap-5">
+                {Nav} 
+                <ChooseLanguage />
+            </div>
   
             <div
               onClick={() => setNavMobile(!navMobile)}
               className='hidden max-lg:block cursor-pointer z-10'>
               {navMobile ? <IoIosClose size={39} /> : <IoIosMenu size={39} />}
             </div>
-        </div>
+
 
 
         {navMobile &&
@@ -116,7 +119,9 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-   
+              
+              <ChooseLanguage />
+
               <div className='absolute bottom-20'>
                 <IconsRedeSocais flexDirection="flex-row" />
               </div>

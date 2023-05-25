@@ -12,7 +12,7 @@ const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
          ariaLabel: "GitHub",
          icon: <FiGithub 
          size={28} 
-         className="text-white hover:text-primary-200 active:text-primary-200" 
+         className="text-white hover:text-primary-200" 
          />
       },
       {
@@ -21,7 +21,7 @@ const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
          ariaLabel: "Whatsapp",
          icon: <FaWhatsapp 
          size={28} 
-         className="text-white hover:text-primary-200 active:text-primary-200" 
+         className="text-white hover:text-primary-200" 
          />
       },
       {
@@ -30,7 +30,7 @@ const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
          ariaLabel: "Instagram",
          icon: <FiInstagram 
          size={28} 
-         className="text-white hover:text-primary-200 active:text-primary-200" 
+         className="text-white hover:text-primary-200" 
          />
       },
       {
@@ -39,7 +39,7 @@ const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
          ariaLabel: "Linkedin",
          icon: <FiLinkedin 
          size={28} 
-         className="text-white hover:text-primary-200 active:text-primary-200" 
+         className="text-white hover:text-primary-200" 
          />
       }
    ]
