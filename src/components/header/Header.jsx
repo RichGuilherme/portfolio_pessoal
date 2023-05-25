@@ -63,7 +63,7 @@ const Header = () => {
           </li>
         ))}
 
-        <a className='border border-white py-[18px] px-[19px] min-w-[151px] relative 
+        <a className='border border-white py-[18px] text-center text-lg px-[19px] min-w-[165px] relative 
            before:w-0 before:h-full before:bg-white before:absolute before:top-0 before:left-0 
            before:duration-500 hover:before:w-full group'
            href='#conectar'>

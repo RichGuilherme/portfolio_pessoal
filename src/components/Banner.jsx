@@ -1,14 +1,15 @@
 import { FiArrowRight } from "react-icons/fi"
-import bannerAstronauta from "../assets/astronauta-fofo.png"
-import astronautaRocket from "../assets/astronauta-rocket.png"
-
-import IconsRedeSocais from "./IconsRedeSocais"
-import curriculoPDF from '../assets/currículo.pdf'
-
 import { WriteTextType } from "./WriteTextType"
 import { useState, useEffect } from "react"
 import useScrolled from "../hook/useScrolled"
 import { useTranslation } from "react-i18next"
+
+
+import bannerAstronauta from "../assets/astronauta-fofo.png"
+import astronautaRocket from "../assets/astronauta-rocket.png"
+import IconsRedeSocais from "./IconsRedeSocais"
+import curriculoPDF from '../assets/currículo.pdf'
+
 
 
 const Banner = () => {

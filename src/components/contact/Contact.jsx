@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+
 import astronautaBackground from '../../assets/imagem-astronauta.svg'
 import BoxsInformations from './BoxsInformations'
 import SendMessage from './SendMensage'

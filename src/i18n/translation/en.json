@@ -74,30 +74,31 @@
             },
             {
                 "programming logic": {
-                     "title": "Programming Logic",
-                     "descrition": "Complete Logic Programming Course"
+                    "title": "Programming Logic",
+                    "descrition": "Complete Logic Programming Course"
                 },
-                 "web css": {
-                      "title": "Web Css",
-                      "descrition": "Concepts covered in the course:2d and 3d animations · Stylization · Pseudo-class and Pseudo-elements · CSS Grid Layout · Flexbox · Responsibility · Good practices and convention in Css"
-                 },
-                 "react fundamentals": {
-                      "title": "React Fundamentals",
-                      "descrition": "Course of the first steps in the library"
-                 },
-                 "basic hooks": {
-                     "title": "Basic React Hooks",
-                     "descrition": "Learn a little about the main hooks in react"
-                 },
-                 "js advanced": {
-                     "title": "Advanced Javascript",
-                     "descrition": "Advanced Concepts Covered:Variables, Scope, and Data Types in JavaScript · Prototype Orientation · Functions and List Manipulation · Promises and Asynchrony"
-                 }
+                "web css": {
+                    "title": "Web Css",
+                    "descrition": "Concepts covered in the course:2d and 3d animations · Stylization · Pseudo-class and Pseudo-elements · CSS Grid Layout · Flexbox · Responsibility · Good practices and convention in Css"
+                },
+                "react fundamentals": {
+                    "title": "React Fundamentals",
+                    "descrition": "Course of the first steps in the library"
+                },
+                "basic hooks": {
+                    "title": "Basic React Hooks",
+                    "descrition": "Learn a little about the main hooks in react"
+                },
+                "js advanced": {
+                    "title": "Advanced Javascript",
+                    "descrition": "Advanced Concepts Covered:Variables, Scope, and Data Types in JavaScript · Prototype Orientation · Functions and List Manipulation · Promises and Asynchrony"
+                }
             }
-            
         ],
-        "contact" : [
-            {"get in touch": "Get in Touch"},
+        "contact": [
+            {
+                "get in touch": "Get in Touch"
+            },
             {
                 "boxs informations": {
                     "location": "Location"
@@ -106,11 +107,14 @@
                     "your name": "Your Name...",
                     "your e-mail": "Your E-mail...",
                     "your message": "Your Message...",
-                    "send message": "Send Message"
+                    "send form": "Send Message",
+                    "fill in all fields": "Fill in all fields",
+                    "success": "Message sent successfully !!",
+                    "erro": "Error sending message, try again!!"
                 }
             }
         ],
-        "footer":[
+        "footer": [
             {
                 "my logo": "my logo",
                 "copyright": "All rights reserved. Site developed by RichGuilherme"

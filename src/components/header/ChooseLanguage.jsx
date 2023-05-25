@@ -1,11 +1,11 @@
-import { useState } from 'react'
-
-import bandeiraBrasil from '../../assets/iconsBandeiras/brazil.svg'
-import bandeiraUSA from '../../assets/iconsBandeiras/USA.svg'
-import { IoIosArrowDown } from 'react-icons/io'
 
 import {useTranslation} from 'react-i18next'
 import i18next from 'i18next'
+import { useState } from 'react'
+import { IoIosArrowDown } from 'react-icons/io'
+
+import bandeiraBrasil from '../../assets/iconsBandeiras/brazil.svg'
+import bandeiraUSA from '../../assets/iconsBandeiras/USA.svg'
 
 const ChooseLanguage = () => {
     const [showCountry, setShowCountry] = useState(false)

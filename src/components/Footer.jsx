@@ -1,6 +1,7 @@
 import IconsRedeSocais from './IconsRedeSocais'
-import logo from '../assets/logoRichard-280x680.png'
 import { useTranslation } from 'react-i18next'
+
+import logo from '../assets/logoRichard-280x680.png'
 
 const Footer = () => {
     const {t} = useTranslation()
