@@ -1,0 +1,46 @@
+# Fluxo de trabalho simples para o implementação em produção de conteúdo estático para a GitHub Pages
+name: Deploy static content to Pages
+on:
+  # Executa sobre empurrões mirando o ramo padrão
+  push:
+    branches: ['main']
+  # Permite-te executar este fluxo de trabalho manualmente da aba de Actions
+  workflow_dispatch:
+# Defina as permissões da GITHUB_TOKEN para permitir a implementação para a GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+# Permite uma implementação em produção simultânea
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+jobs:
+  # Trabalho de implementação individual já que estamos apenas implementando
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Carregar o repositório dist
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
