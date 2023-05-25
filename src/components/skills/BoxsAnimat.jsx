@@ -7,9 +7,10 @@ import iconGit from '../../assets/iconsLinguagens/git-original.svg'
 import { useTranslation } from 'react-i18next'
 
 const BoxsAnimat = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
-    const boxsTec = 'grid grid-cols-[52px_minmax(265px,_2fr)] max-w-[356px] grid-rows-2 items-center h-24 bg-secondary-300 border border-primary-200 rounded-[10px] py-3 px-2 gap-x-1'
+    const boxsBorderTec = 'max-w-[356px] h-24  bg-gradient-to-tr from-gradient-100 via-primary-200 to-gradient-200 rounded-[10px] p-[1.3px] gap-x-1'
+    const boxsTec = 'grid grid-cols-[52px_minmax(265px,_2fr)] grid-rows-2 items-center py-3 px-2 w-full h-full bg-secondary-300 rounded-[10px]'
     const imgTec = 'w-[54px] h-[52px] float-right'
     const titleTec = 'text-xl font-bold mb-3'
 
@@ -46,13 +47,13 @@ const BoxsAnimat = () => {
             id: 2,
             img: iconReact,
             title: "React",
-            descrition:  t("skills.1.tecsSlideRowTwo.descritionReact")
+            descrition: t("skills.1.tecsSlideRowTwo.descritionReact")
         },
         {
             id: 3,
             img: iconGit,
             title: "Git",
-            descrition:  t("skills.1.tecsSlideRowTwo.descritionGit")
+            descrition: t("skills.1.tecsSlideRowTwo.descritionGit")
         }
     ]
 
@@ -63,70 +64,79 @@ const BoxsAnimat = () => {
     after:absolute after:h-60 after:w-[85px] after:z-10 after:bg-gradient-to-r after:from-black after:to-transparent after:top-0 after:right-[-1px] after:rotate-180'>
 
             {/* primeira linha com as linguagens */}
-            <div name="row One" 
-            data-aos="fade-left"
-            className='flex items-center w-[calc(388px*6)] gap-8
+            <div name="row One"
+                data-aos="fade-left"
+                className='flex items-center w-[calc(388px*6)] gap-8
            animate-boxLinguageAnim1 '> {/*o 388px representa a soma do 356px da box + o gap de 32px*/}
 
                 {tecsSlideRowOne.map(({ id, img, title, descrition }) => (
-                    <div className={boxsTec} key={id}>
-                        <div className='row-span-2'>
-                            <img
-                                className={imgTec}
-                                src={img}
-                                alt={title}
-                            />
+                    <div className={boxsBorderTec} key={id}>
+                        <div className={boxsTec}>
+                            <div className='row-span-2'>
+                                <img
+                                    className={imgTec}
+                                    src={img}
+                                    alt={title}
+                                />
+                            </div>
+                            <h2 className={titleTec}>{title}</h2>
+                            <p className='font-light'>{descrition}</p>
                         </div>
-                        <h2 className={titleTec}>{title}</h2>
-                        <p className='font-light'>{descrition}</p>
                     </div>
                 ))}
                 {/* clone dos primeiros elementos para criar o efeito de scroll infinito */}
                 {tecsSlideRowOne.map(({ id, img, title, descrition }) => (
-                    <div className={boxsTec} key={id}>
-                        <div className='row-span-2'>
-                            <img
-                                className={imgTec}
-                                src={img}
-                                alt={title}
-                            />
+
+                    <div className={boxsBorderTec} key={id}>
+                        <div className={boxsTec}>
+                            <div className='row-span-2'>
+                                <img
+                                    className={imgTec}
+                                    src={img}
+                                    alt={title}
+                                />
+                            </div>
+                            <h2 className={titleTec}>{title}</h2>
+                            <p className='font-light'>{descrition}</p>
                         </div>
-                        <h2 className={titleTec}>{title}</h2>
-                        <p className='font-light'>{descrition}</p>
                     </div>
                 ))}
             </div>
 
             {/* Segunda linha com as linguagens */}
-            <div name="row Two" 
-            data-aos="fade-right"
-            className='flex items-center w-[calc(388px*6)] gap-8 relative right-[1134px]
+            <div name="row Two"
+                data-aos="fade-right"
+                className='flex items-center w-[calc(388px*6)] gap-8 relative right-[1134px]
          animate-boxLinguageAnim2'> {/*o 388px representa a soma do 356px da box + o gap de 32px */}
                 {tecsSlideRowTwo.map(({ id, img, title, descrition }) => (
-                    <div className={boxsTec} key={id}>
-                        <div className='row-span-2'>
-                            <img
-                                className={imgTec}
-                                src={img}
-                                alt={title}
-                            />
+                    <div className={boxsBorderTec} key={id}>
+                        <div className={boxsTec}>
+                            <div className='row-span-2'>
+                                <img
+                                    className={imgTec}
+                                    src={img}
+                                    alt={title}
+                                />
+                            </div>
+                            <h2 className={titleTec}>{title}</h2>
+                            <p className='font-light'>{descrition}</p>
                         </div>
-                        <h2 className={titleTec}>{title}</h2>
-                        <p className='font-light'>{descrition}</p>
                     </div>
                 ))}
 
                 {tecsSlideRowTwo.map(({ id, img, title, descrition }) => (
-                    <div className={boxsTec} key={id}>
-                        <div className='row-span-2'>
-                            <img
-                                className={imgTec}
-                                src={img}
-                                alt={title}
-                            />
+                    <div className={boxsBorderTec} key={id}>
+                        <div className={boxsTec}>
+                            <div className='row-span-2'>
+                                <img
+                                    className={imgTec}
+                                    src={img}
+                                    alt={title}
+                                />
+                            </div>
+                            <h2 className={titleTec}>{title}</h2>
+                            <p className='font-light'>{descrition}</p>
                         </div>
-                        <h2 className={titleTec} >{title}</h2>
-                        <p className='font-light'>{descrition}</p>
                     </div>
                 ))}
             </div>

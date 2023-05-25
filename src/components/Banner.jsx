@@ -1,7 +1,5 @@
 import { FiArrowRight } from "react-icons/fi"
 import { WriteTextType } from "./WriteTextType"
-import { useState, useEffect } from "react"
-import useScrolled from "../hook/useScrolled"
 import { useTranslation } from "react-i18next"
 
 
@@ -13,17 +11,7 @@ import curriculoPDF from '../assets/currículo.pdf'
 
 
 const Banner = () => {
-  const [offset, SetOffset] = useState(0)
-  const [scrolled] = useScrolled(861)
   const { t } = useTranslation()
-
-  const handleScroll = () => SetOffset(window.pageYOffset) //variável para criar o efeito parallax
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
 
   return (
@@ -33,8 +21,7 @@ const Banner = () => {
        brightness-60 relative" ></div>
 
 
-        <div className="absolute top-52 w-full"
-          style={{ transform: `translateY(${offset * 0.9}px)` }}>
+        <div className="absolute top-52 w-full">
 
           <div 
           data-aos="fade-up"
@@ -68,10 +55,8 @@ const Banner = () => {
               <h2 className="mt-10 text-6xl font-extrabold max-lg:text-center max-sm:text-4xl">
               {t("banner.0.I'm")}
                 <p className="text-primary-200 max-w-[330px] max-lg:text-left">
-                  {scrolled ? "" :
                     <WriteTextType texto={[t("banner.0.web developer"), t("banner.0.front-end developer")]}
                       cursor="true" loops="{}" />
-                  }
                 </p>
               </h2>
 

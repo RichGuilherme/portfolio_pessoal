@@ -5,15 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+body {
     scrollbar-width: thin;
     scrollbar-color: black;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   ::-webkit-scrollbar {
-    width: 13px;
+    width: 11px;
   }
 
   ::-webkit-scrollbar-track {
@@ -21,7 +22,7 @@ html, body {
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #6E43CB;
+    background: linear-gradient(0deg, rgba(35,59,116,1) 6%, rgba(110,67,203,1) 50%, rgba(48,28,116,1) 95%);
     border: 1px solid  #14142B;
     border-radius: 10px;
   }
@@ -31,4 +32,5 @@ h1 {
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #6E43CB;
+
 }

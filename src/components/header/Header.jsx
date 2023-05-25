@@ -58,7 +58,7 @@ const Header = () => {
           >
             <a href={href}
               className=' h-full w-full block break-normal
-              after:w-full after:h-[1px] after:bg-white after:block after:scale-0 
+              after:w-full after:h-[1px] after:bg-primary-200 after:block after:scale-0 
               after:transition-transform after:duration-500 hover:after:scale-100'
             >
               {link}</a>
@@ -81,7 +81,7 @@ const Header = () => {
 
   return (
 
-    <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black" : ""} 
+    <header className={`h-24 text-white w-screen z-50 fixed ${scrolled ? "bg-black/50 backdrop-blur-md" : ""} 
      ease-linear duration-700`}>
 
       <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 max-xl:w-10/12

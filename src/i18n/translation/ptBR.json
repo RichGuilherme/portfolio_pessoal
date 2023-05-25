@@ -11,7 +11,7 @@
         "banner": [
             {
                 "welcome": "Bem vindo ao meu portfólio!",
-                "I'm": "Oi! Sou Richard,",
+                "I'm": "Oi! Eu sou Richard,",
                 "web developer": "Desenvolvedor Web",
                 "front-end developer": "Desenvolvedor Front-End",
                 "icon astronaut with rocket": "astronauta em um foquete",
@@ -71,7 +71,7 @@
                 },
                 "personal portfolio": {
                     "title": "Portfólio Pessoal",
-                    "descrition": "Meu primeiro portfólio pessoal"
+                    "descrition": "Meu portfólio pessoal que mostra um pouco das minhas habilidades e conhecimentos na programação."
                 }
             },
             {

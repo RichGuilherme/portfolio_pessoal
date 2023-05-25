@@ -13,7 +13,7 @@ const Contact = () => {
     id='conectar'>
 
             <div 
-            data-aos="zoom-in" data-aos-delay="400"
+            data-aos="zoom-in" data-aos-delay="200"
             className='flex items-end w-[47%]'>
                 <img
                     className="h-[75%] max-h-[690px] "
