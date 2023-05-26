@@ -75,6 +75,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
           key={id} className={boxsProjects}>
           <img
             className="object-cover object-center h-full w-1/2 rounded-3xl max-md:w-full max-md:h-72 "
+            loading='lazy'
             src={img}
             alt={title} 
           />

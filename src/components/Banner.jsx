@@ -42,6 +42,7 @@ const Banner = () => {
               <img
                 className="w-28 h-28 animate-downUpAnimation"
                 src={astronautaRocket}
+                loading="lazy"
                 alt={t("banner.0.icon astronaut with rocket")}
               />
 

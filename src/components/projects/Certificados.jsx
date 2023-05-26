@@ -74,6 +74,7 @@ const Certificados = ({ OnOff = false }) => {
           key={id} className={boxsCertificates}>
           <img
             className="object-cover object-center h-full w-full "
+            loading="lazy"
             src={img}
             alt={title}
           />

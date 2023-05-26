@@ -45,7 +45,8 @@ export default {
           planetaRochosoAnimation : 'planetaRochosoAnimation 20s linear infinite ',
           planetaVermelhoAnimation : 'planetaVermelhoAnimation 10s linear infinite alternate',
           boxLinguageAnim1 : "boxLinguageAnim1 35s linear infinite;",
-          boxLinguageAnim2 : "boxLinguageAnim2 35s linear infinite ;"
+          boxLinguageAnim2 : "boxLinguageAnim2 35s linear infinite ;",
+          fadeOutUp: "fadeOutUp 2s ease forwards 2.2s"
       },
       keyframes : {
           downUpAnimation : {
@@ -72,7 +73,11 @@ export default {
          boxLinguageAnim2 :{
            "from" : {transform: "translateX(0px);"},
            "to" : {transform: "translateX(calc(388px*3))"}
-         }
+         },
+         fadeOutUp : {
+          "from" : {opacity: "1"},
+          "to" : {opacity: "0", transform: "translate3d(0, -100%, 0)"}
+        }
     },
   },
   plugins: [],

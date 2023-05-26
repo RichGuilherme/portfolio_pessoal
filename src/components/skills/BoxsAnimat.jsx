@@ -75,6 +75,7 @@ const BoxsAnimat = () => {
                             <div className='row-span-2'>
                                 <img
                                     className={imgTec}
+                                    loading="lazy"
                                     src={img}
                                     alt={title}
                                 />
@@ -92,6 +93,7 @@ const BoxsAnimat = () => {
                             <div className='row-span-2'>
                                 <img
                                     className={imgTec}
+                                    loading="lazy"
                                     src={img}
                                     alt={title}
                                 />
@@ -114,6 +116,7 @@ const BoxsAnimat = () => {
                             <div className='row-span-2'>
                                 <img
                                     className={imgTec}
+                                    loading="lazy"
                                     src={img}
                                     alt={title}
                                 />
@@ -130,6 +133,7 @@ const BoxsAnimat = () => {
                             <div className='row-span-2'>
                                 <img
                                     className={imgTec}
+                                    loading="lazy"
                                     src={img}
                                     alt={title}
                                 />

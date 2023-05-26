@@ -17,6 +17,7 @@ const Contact = () => {
             className='flex items-end w-[47%]'>
                 <img
                     className="h-[75%] max-h-[690px] "
+                    loading='lazy'
                     src={astronautaBackground}
                     alt="astronauta "
                 />

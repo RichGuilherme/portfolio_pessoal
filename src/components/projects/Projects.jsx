@@ -36,6 +36,7 @@ const Projects = () => {
         className='w-[250px] h-[249px] sm:max-w-[380px] sm:max-h-[365px] absolute left-0
         animate-planetaRochosoAnimation -z-10'
         src={planetaRochoso}
+        loading="lazy"
         alt={t("projects.0.rocky planet")}
       />
       <div 
