@@ -21,9 +21,8 @@ const Footer = () => {
     )
 
     return (
-        <div className=" h-52 max-h-full bg-secondary-300 font-jost ">
-            <div className='flex flex-row justify-between max-md:flex-col items-center h-full w-9/12 
-        mx-auto'>
+        <div className=" min-h-[210px] h-52 max-h-60 bg-secondary-300 font-jost flex justify-center items-center">
+            <div className='flex flex-row justify-between max-md:flex-col items-center h-full w-9/12 '>
 
                    {logo}
                 <div className='flex flex-col items-center text-center gap-10 w-[314px] max-sm:w-[280px]'>

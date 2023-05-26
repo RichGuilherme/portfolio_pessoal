@@ -8,15 +8,15 @@ const Contact = () => {
     const {t} = useTranslation()
 
     return (
-        <section className="w-full lg:h-[calc(100vh-200px)] h-full font-jost bg-gradient-to-r text-white
-    from-primary-200 to-secondary-300 flex flex-row max-lg:flex-col-reverse justify-between relative"
+        <section className="w-full min-h-[calc(100vh-200px)] font-jost bg-gradient-to-r text-white
+    from-primary-200 to-secondary-300 flex flex-row max-lg:flex-col-reverse max-lg:min-h-full justify-between relative"
     id='conectar'>
 
             <div 
             data-aos="zoom-in" data-aos-delay="200"
             className='flex items-end w-[47%]'>
                 <img
-                    className="h-[75%] max-h-[690px] "
+                    className="max-h-[75%] relative top-0"
                     loading='lazy'
                     src={astronautaBackground}
                     alt="astronauta "

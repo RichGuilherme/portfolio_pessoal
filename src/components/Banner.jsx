@@ -21,12 +21,12 @@ const Banner = () => {
        brightness-60 relative" ></div>
 
 
-        <div className="absolute top-52 w-full">
+        <div className="absolute top-0 w-full h-screen flex justify-center items-center">
 
           <div 
           data-aos="fade-up"
-          className="flex flex-col items-center w-7 absolute left-16 
-               top-72 max-md:hidden">
+          className="flex flex-col items-center w-7 relative left-20 
+               top-[235px] max-md:hidden">
 
             <IconsRedeSocais flexDirection="flex-col" />
             <div className="h-24 bg-white w-1 mt-10 rounded-md"></div>
