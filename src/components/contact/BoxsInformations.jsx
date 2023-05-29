@@ -16,7 +16,7 @@ const BoxsInformations = () => {
 
                 <p
                     className='text-[#A9A9A9] text-lg'>
-                    (31) 989298009</p>
+                    (31) 98929-8009</p>
             </div>
 
             <div className='bg-secondary-200 flex flex-col gap-1 justify-center w-full rounded-lg
