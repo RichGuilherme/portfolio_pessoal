@@ -10,7 +10,7 @@ const Footer = () => {
     const year = date.getFullYear().toString()
 
     const logo = (
-        <div className='w-40 h-16 min-w-[160px] mr-5 mb-5'>
+        <div className='w-40 h-16 min-w-[160px] mb-5'>
             <div className="flex flex-col items-center">
                 <IoCodeSlashOutline size={37} className="text-primary-200" />
                 <div className="text-xl text-white font-semibold tracking-wide flex flex-col items-center ">
@@ -21,7 +21,7 @@ const Footer = () => {
     )
 
     return (
-        <div className=" min-h-[210px] h-52 max-h-60 bg-secondary-300 font-jost flex justify-center items-center">
+        <div className=" min-h-[235px] h-52 max-h-60 bg-secondary-300 font-jost flex justify-center items-center">
             <div className='flex flex-row justify-between max-md:flex-col items-center h-full w-9/12 '>
 
                    {logo}
