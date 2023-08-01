@@ -42,12 +42,14 @@
                 "tecsSlideRowOne": {
                     "descritionCSS": "Cascading Style Shell (CSS) is a style sheet language",
                     "descritionTailwind": "CSS Framework for Creating Layouts Using a Ready-Made CSS structure",
-                    "descritionHTML": "Hypertext Markup Language which is the structure of a web page"
+                    "descritionHTML": "Hypertext Markup Language which is the structure of a web page",
+                    "descritionNextjs": "It is a React framework with a focus on production and efficiency, adding a number of functionalities"
                 },
                 "tecsSlideRowTwo": {
                     "descritionJS": "JavaScript is a programming language that drives the web",
                     "descritionReact": "A javaScript library that is used for building user interface",
-                    "descritionGit": "It is the most widely used open source version control system in the world today!"
+                    "descritionGit": "It is the most widely used open source version control system in the world today!",
+                    "descritionTypeScript": "It is a programming language that is strongly typed and transcompiles to JavaScript"
                 }
             }
         ],

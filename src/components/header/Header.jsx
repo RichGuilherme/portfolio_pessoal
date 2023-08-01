@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react"
 import { IoIosClose, IoIosMenu } from "react-icons/io";
 import useScrolled from '../../hook/useScrolled';
@@ -6,9 +5,8 @@ import { useTranslation } from "react-i18next";
 
 import ChooseLanguage from './ChooseLanguage';
 
-// import logo from '../../assets/logoRichard-280x680.png'
 import IconsRedeSocais from '../IconsRedeSocais';
-import { IoCodeSlashOutline } from "react-icons/io5";
+import { Logo } from "../Logo";
 
 
 const Header = () => {
@@ -38,49 +36,6 @@ const Header = () => {
   }
   ]
 
-  const Logo = (
-    <a
-      href='#'
-      className='w-40 h-16 min-w-[160px] mr-5 mb-5'>
-      <div className="flex flex-col items-center">
-        <IoCodeSlashOutline size={37} className="text-primary-200" />
-        <div className="text-xl font-semibold tracking-wide flex flex-col items-center ">
-            RichGuilherme
-        </div>
-      </div>
-    </a>
-  )
-
-  const Nav = (
-    <nav className='flex flex-row justify-between items-center gap-10'>
-      <ul className='flex flex-row justify-between items-center gap-10'>
-        {links.map(({ id, link, href }) => (
-          <li key={id}
-            className='text-lg text-white font-inter max-w-[100px] relative  
-                                cursor-default'
-          >
-            <a href={href}
-              className=' h-full w-full block break-normal
-              after:w-full after:h-[1px] after:bg-primary-200 after:block after:scale-0 
-              after:transition-transform after:duration-500 hover:after:scale-100'
-            >
-              {link}</a>
-          </li>
-        ))}
-
-        <a className='border border-white py-[18px] text-center text-lg px-[19px] min-w-[165px] relative 
-           before:w-0 before:h-full before:bg-white before:absolute before:top-0 before:left-0 
-           before:duration-500 hover:before:w-full group'
-          href='#conectar'>
-          <span className='group-hover:text-black group-hover:z-10 group-hover:relative'>
-            {t("navBar.0.connect")}
-          </span>
-        </a>
-
-      </ul>
-    </nav>
-  )
-
 
   return (
 
@@ -90,10 +45,38 @@ const Header = () => {
       <div className='flex flex-row justify-between items-center mx-auto h-24 w-9/12 max-xl:w-10/12
       my-1 '>
 
-        {Logo}
+        <Logo />
 
         <div className="max-lg:hidden flex flex-row items-center gap-5">
-          {Nav}
+
+          <nav className='flex flex-row justify-between items-center gap-10'>
+            <ul className='flex flex-row justify-between items-center gap-10'>
+              {links.map(({ id, link, href }) => (
+                <li key={id}
+                  className='text-lg text-white font-inter max-w-[100px] relative  
+                                cursor-default'
+                >
+                  <a href={href}
+                    className=' h-full w-full block break-normal
+              after:w-full after:h-[1px] after:bg-primary-200 after:block after:scale-0 
+              after:transition-transform after:duration-500 hover:after:scale-100'
+                  >
+                    {link}</a>
+                </li>
+              ))}
+
+              <a className='border border-white py-[18px] text-center text-lg px-[19px] min-w-[165px] relative 
+           before:w-0 before:h-full before:bg-white before:absolute before:top-0 before:left-0 
+           before:duration-500 hover:before:w-full group'
+                href='#conectar'>
+                <span className='group-hover:text-black group-hover:z-10 group-hover:relative'>
+                  {t("navBar.0.connect")}
+                </span>
+              </a>
+
+            </ul>
+          </nav>
+
           <ChooseLanguage />
         </div>
 

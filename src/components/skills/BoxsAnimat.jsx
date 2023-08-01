@@ -4,6 +4,10 @@ import iconHTMl from '../../assets/iconsLinguagens/html_original.svg'
 import iconJs from '../../assets/iconsLinguagens/javascript-original.svg'
 import iconReact from '../../assets/iconsLinguagens/react-original.svg'
 import iconGit from '../../assets/iconsLinguagens/git-original.svg'
+import iconTypeScript from '../../assets/iconsLinguagens/typescript-original.svg'
+import iconNext from '../../assets/iconsLinguagens/nextjs-original.svg'
+
+
 import { useTranslation } from 'react-i18next'
 
 const BoxsAnimat = () => {
@@ -34,6 +38,12 @@ const BoxsAnimat = () => {
             title: "HTML5",
             descrition: t("skills.1.tecsSlideRowOne.descritionHTML")
         },
+        {
+            id: 4,
+            img: iconNext,
+            title: "Nextjs",
+            descrition: t("skills.1.tecsSlideRowOne.descritionNextjs")
+        },
     ]
 
     const tecsSlideRowTwo = [
@@ -54,6 +64,12 @@ const BoxsAnimat = () => {
             img: iconGit,
             title: "Git",
             descrition: t("skills.1.tecsSlideRowTwo.descritionGit")
+        },
+        {
+            id: 4,
+            img: iconTypeScript,
+            title: "TypeScript",
+            descrition: t("skills.1.tecsSlideRowTwo.descritionTypeScript")
         }
     ]
 
@@ -66,13 +82,13 @@ const BoxsAnimat = () => {
             {/* primeira linha com as linguagens */}
             <div name="row One"
                 data-aos="fade-left"
-                className='flex items-center w-[calc(388px*6)] gap-8
+                className='flex items-center w-[calc(388px*8)] gap-8
            animate-boxLinguageAnim1 '> {/*o 388px representa a soma do 356px da box + o gap de 32px*/}
 
                 {tecsSlideRowOne.map(({ id, img, title, descrition }) => (
                     <div className={boxsBorderTec} key={id}>
                         <div className={boxsTec}>
-                            <div className='row-span-2'>
+                            <div className='row-span-2 mr-1'>
                                 <img
                                     className={imgTec}
                                     loading="lazy"
@@ -81,7 +97,7 @@ const BoxsAnimat = () => {
                                 />
                             </div>
                             <h2 className={titleTec}>{title}</h2>
-                            <p className='font-light'>{descrition}</p>
+                            <p className='font-light leading-[1.28]'>{descrition}</p>
                         </div>
                     </div>
                 ))}
@@ -90,7 +106,7 @@ const BoxsAnimat = () => {
 
                     <div className={boxsBorderTec} key={id}>
                         <div className={boxsTec}>
-                            <div className='row-span-2'>
+                            <div className='row-span-2 mr-1'>
                                 <img
                                     className={imgTec}
                                     loading="lazy"
@@ -99,7 +115,7 @@ const BoxsAnimat = () => {
                                 />
                             </div>
                             <h2 className={titleTec}>{title}</h2>
-                            <p className='font-light'>{descrition}</p>
+                            <p className='font-light leading-[1.28]'>{descrition}</p>
                         </div>
                     </div>
                 ))}
@@ -108,12 +124,12 @@ const BoxsAnimat = () => {
             {/* Segunda linha com as linguagens */}
             <div name="row Two"
                 data-aos="fade-right"
-                className='flex items-center w-[calc(388px*6)] gap-8 relative right-[1134px]
+                className='flex items-center w-[calc(388px*8)] gap-8 relative right-[1552px]
          animate-boxLinguageAnim2'> {/*o 388px representa a soma do 356px da box + o gap de 32px */}
                 {tecsSlideRowTwo.map(({ id, img, title, descrition }) => (
                     <div className={boxsBorderTec} key={id}>
                         <div className={boxsTec}>
-                            <div className='row-span-2'>
+                            <div className='row-span-2 mr-1'>
                                 <img
                                     className={imgTec}
                                     loading="lazy"
@@ -122,7 +138,7 @@ const BoxsAnimat = () => {
                                 />
                             </div>
                             <h2 className={titleTec}>{title}</h2>
-                            <p className='font-light'>{descrition}</p>
+                            <p className='font-light leading-[1.28]'>{descrition}</p>
                         </div>
                     </div>
                 ))}
@@ -130,7 +146,7 @@ const BoxsAnimat = () => {
                 {tecsSlideRowTwo.map(({ id, img, title, descrition }) => (
                     <div className={boxsBorderTec} key={id}>
                         <div className={boxsTec}>
-                            <div className='row-span-2'>
+                            <div className='row-span-2 mr-1'>
                                 <img
                                     className={imgTec}
                                     loading="lazy"
@@ -139,7 +155,7 @@ const BoxsAnimat = () => {
                                 />
                             </div>
                             <h2 className={titleTec}>{title}</h2>
-                            <p className='font-light'>{descrition}</p>
+                            <p className='font-light leading-[1.28]'>{descrition}</p>
                         </div>
                     </div>
                 ))}

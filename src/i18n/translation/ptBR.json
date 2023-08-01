@@ -42,12 +42,14 @@
                 "tecsSlideRowOne": {
                     "descritionCSS": "Cascading Style Shell é uma linguagem de folha de estilos",
                     "descritionTailwind": "Framework CSS para criação de layouts usando uma estrutura de CSS pronta",
-                    "descritionHTML": "Linguagem de Marcação de Hipertexto que é a estrutura de uma página web"
+                    "descritionHTML": "Linguagem de Marcação de Hipertexto que é a estrutura de uma página web",
+                    "descritionNextjs": "É um framework React com foco em produção e eficiência, acrescentando uma serie de funcionalidades"
                 },
                 "tecsSlideRowTwo": {
                     "descritionJS": "JavaScript é uma linguagem de programação que impulsiona a web",
                     "descritionReact": "Uma biblioteca javascript usada para criar a interface do usuário",
-                    "descritionGit": "É o sistema de controle de versão open source mais usado no mundo atualmente!"
+                    "descritionGit": "É o sistema de controle de versão open source mais usado no mundo atualmente!",
+                    "descritionTypeScript":"É uma linguagem de programação que é fortemente tipada e transcompila para JavaScript"
                 }
             }
         ],

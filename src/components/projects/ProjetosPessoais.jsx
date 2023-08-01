@@ -16,7 +16,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
 
   useEffect(() => {
     setOn(OnOff)
-  })
+  },[OnOff])
 
 
   const listProjetcs = [

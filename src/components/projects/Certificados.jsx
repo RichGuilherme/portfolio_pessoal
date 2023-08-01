@@ -10,13 +10,14 @@ import fundamentosReact from '../../assets/certificados/fundamentos-react.png'
 import hooksBasico from '../../assets/certificados/hooks-Basicos.png'
 import JsAdvanced from '../../assets/certificados/conceitos-avançados-js.png'
 
+
 const Certificados = ({ OnOff = false }) => {
   const { t } = useTranslation()
   const [on, setOn] = useState(false)
 
   useEffect(() => {
     setOn(OnOff)
-  })
+  }, [OnOff])
 
   const listsCertificates = [
     {

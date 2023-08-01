@@ -28,7 +28,7 @@ const AboutMe = () => {
                <h2 className={title} >{t("about me.1.education")}</h2>
                <p className={contest}>
                   {t("about me.1.formation")}<br></br>
-                  Jan/22 - Jul/24
+                  Jan/22 - dez/23
                </p>
             </div>
 
