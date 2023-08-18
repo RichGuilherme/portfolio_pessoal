@@ -61,19 +61,19 @@
                 "certificates": "Certificates"
             },
             {
-                "react calculator": {
-                    "title": "React Calculator",
-                    "descrition": "Design of a calculator made with react, which has a dark and light theme"
+                "searchMovie": {
+                    "title": "SearchMovie",
+                    "descrition": "Project that serves to search for movies and TV series that are made available by the TMDB API."
                 },
                 "weather project": {
-                    "descrition": "Project that shows the details of the climate of some region using the OpenWeatherMap Api"
+                    "descrition": "Project that shows the details of the climate of some region using the OpenWeatherMap Api."
                 },
                 "lol pages": {
-                    "descrition": "Reimagining the League Of Legends game page"
+                    "descrition": "Reimagining the League Of Legends game page."
                 },
                 "personal portfolio": {
                     "title": "Personal Portfolio",
-                    "descrition": "My first personal portfolio"
+                    "descrition": "My first personal portfolio."
                 }
             },
             {
@@ -82,7 +82,7 @@
                     "descrition": "Complete Logic Programming Course"
                 },
                 "web css": {
-                    "title": "Web Css",
+                    "title": "Web CSS",
                     "descrition": "Concepts covered in the course:2d and 3d animations · Stylization · Pseudo-class and Pseudo-elements · CSS Grid Layout · Flexbox · Responsibility · Good practices and convention in Css"
                 },
                 "react fundamentals": {
@@ -94,8 +94,8 @@
                     "descrition": "Learn a little about the main hooks in react"
                 },
                 "js advanced": {
-                    "title": "Advanced Javascript",
-                    "descrition": "Advanced Concepts Covered:Variables, Scope, and Data Types in JavaScript · Prototype Orientation · Functions and List Manipulation · Promises and Asynchrony"
+                    "title": "Javascript Developer Training",
+                    "descrition": "Concepts covered: Variables, Scope, and Data Types in JavaScript · Prototype Orientation · Functions and List Manipulation · Promises and Asynchrony · Object Orientation · Objects and Class · Web development"
                 }
             }
         ],

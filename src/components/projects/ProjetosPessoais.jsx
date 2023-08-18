@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { FiGithub } from 'react-icons/fi'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
-import calculadoraReact from '../../assets/projetosPessoaisImg/calculadora-react-img.png'
+import searchMovie from '../../assets/projetosPessoaisImg/searchMovie.png'
 import weatherProject from '../../assets/projetosPessoaisImg/weather-project.png'
 import LOLPages from '../../assets/projetosPessoaisImg/league-of-legends-page.png'
 import projetoPessoal from '../../assets/projetosPessoaisImg/projeto-pessoal.png'
@@ -22,12 +22,12 @@ const ProjetosPessoais = ({ OnOff = true }) => {
   const listProjetcs = [
     {
       id: 1,
-      href: "https://richguilherme.github.io/calculadora_React/",
-      github: "https://github.com/RichGuilherme/calculadora_React",
-      img: calculadoraReact,
-      title: t("projects.1.react calculator.title"),
-      tecnologias: "React - Css - Js",
-      descrition: t("projects.1.react calculator.descrition")
+      href: "https://searchmovie-ten.vercel.app",
+      github: "https://github.com/RichGuilherme/searchmovie",
+      img: searchMovie,
+      title: t("projects.1.searchMovie.title"),
+      tecnologias: "React - NextJs - Tailwind - Axios - TypeScript",
+      descrition: t("projects.1.searchMovie.descrition")
     },
     {
       id: 2,

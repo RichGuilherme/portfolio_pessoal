@@ -8,7 +8,7 @@ import logicaDaProgramação from '../../assets/certificados/certificado-lógica
 import cssWeb from '../../assets/certificados/bootcamp-css-web.png'
 import fundamentosReact from '../../assets/certificados/fundamentos-react.png'
 import hooksBasico from '../../assets/certificados/hooks-Basicos.png'
-import JsAdvanced from '../../assets/certificados/conceitos-avançados-js.png'
+import JsAdvanced from '../../assets/certificados/formação-javascript-developer.png'
 
 
 const Certificados = ({ OnOff = false }) => {
@@ -25,14 +25,14 @@ const Certificados = ({ OnOff = false }) => {
       href: "https://www.udemy.com/certificate/UC-9d496ae4-d836-4c2b-9969-8877f7487e56/",
       img: logicaDaProgramação,
       title: t("projects.2.programming logic.title"),
-      descrition:  t("projects.2.programming logic.descrition")
+      descrition: t("projects.2.programming logic.descrition")
     },
     {
       id: 2,
       href: "https://www.dio.me/certificate/B021C86E/share",
       img: cssWeb,
-      title:  t("projects.2.web css.title"),
-      descrition:  t("projects.2.web css.descrition")
+      title: t("projects.2.web css.title"),
+      descrition: t("projects.2.web css.descrition")
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const Certificados = ({ OnOff = false }) => {
     },
     {
       id: 5,
-      href: "https://www.dio.me/certificate/56692ABB/share",
+      href: "https://www.dio.me/certificate/4FC7C2B6/share",
       img: JsAdvanced,
       title: t("projects.2.js advanced.title"),
       descrition: t("projects.2.js advanced.descrition")
@@ -59,10 +59,10 @@ const Certificados = ({ OnOff = false }) => {
 
   ]
 
-  const titleHover = "font-bold text-3xl text-primary-200 opacity-0 group-hover:opacity-100 duration-700"
+  const titleHover = "flex items-center font-bold text-3xl text-center text-primary-200 opacity-0 group-hover:opacity-100 duration-700"
   const CertificatesHover = 'text-xl font-semibold mb-1 opacity-0 group-hover:opacity-100 duration-1000'
   const descritionHover = 'font-light text-lg text-center opacity-0 group-hover:opacity-100 duration-700'
-  const iconsHover = 'opacity-0 group-hover:opacity-100 duration-1000 hover:duration-0 hover:text-primary-200 cursor-pointer'
+  const iconsHover = 'text-white pl-1 opacity-0 group-hover:opacity-100 duration-1000 hover:duration-0 hover:text-primary-200 cursor-pointer'
   const boxsCertificates = "h-[270px] w-full rounded-3xl relative before:cursor-default overflow-hidden max-w-sm before:bg-[#0a1629] before:opacity-90 before:w-full before:h-0 before:absolute before:duration-[900ms] hover:before:h-full group "
 
 
@@ -83,7 +83,12 @@ const Certificados = ({ OnOff = false }) => {
           <span className="absolute top-0 left-0 flex flex-col gap-1 items-center
             w-full h-full py-[10px] px-2 mt-1">
             <h2 className={titleHover}>
-              {title}</h2>
+               {title}
+                <a href={href} rel="noreferrer" target="_blank" >
+                  <HiOutlineExternalLink size={33}
+                    className={iconsHover} />
+                </a>
+            </h2>
 
             <h3 className={CertificatesHover}>
               {tecnologias}</h3>
@@ -91,12 +96,6 @@ const Certificados = ({ OnOff = false }) => {
             <p className={descritionHover}>
               {descrition}</p>
 
-            <div className='flex flex-row gap-4 mt-8'>
-              <a href={href} rel="noreferrer" target="_blank" >
-                <HiOutlineExternalLink size={28}
-                  className={iconsHover} />
-              </a>
-            </div>
           </span>
         </div>
       ))}

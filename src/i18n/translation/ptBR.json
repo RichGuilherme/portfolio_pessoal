@@ -61,15 +61,15 @@
                 "certificates": "Certificados"
             },
             {
-                "react calculator": {
-                    "title": "Calculadora React",
-                    "descrition": "Projeto de uma calculadora feita com react, que possui um thema dark e light"
+                "searchMovie": {
+                    "title": "SearchMovie",
+                    "descrition": "Projeto que serve para procurar filmes e TV séries que são disponibilizado pela API TMDB."
                 },
                 "weather project": {
-                    "descrition": "Projeto que mostra os detalhe do clima de alguma região usando a Api OpenWeatherMap"
+                    "descrition": "Projeto que mostra os detalhe do clima de alguma região usando a API OpenWeatherMap."
                 },
                 "lol pages": {
-                    "descrition": "Reimaginação da página do jogo League Of Legends"
+                    "descrition": "Reimaginação da página do jogo League Of Legends."
                 },
                 "personal portfolio": {
                     "title": "Portfólio Pessoal",
@@ -82,7 +82,7 @@
                     "descrition": "curso completo de lógica da programação"
                 },
                 "web css": {
-                    "title": "Css Web",
+                    "title": "CSS Web",
                     "descrition": "Conceitos abordados no curso:Animações 2d e 3d · Estilização · Pseudo-class e Pseudo-elementos · CSS Grid Layout · Flexbox · Reponsividade · Boas práticas e convenção no Css"
                 },
                 "react fundamentals": {
@@ -94,8 +94,8 @@
                     "descrition": "Aprende um pouco sobre os principais hooks no react"
                 },
                 "js advanced": {
-                    "title": "Javascript Avançado",
-                    "descrition": "Conceitos avançados abordados:Variáveis, Escopo e Tipos de dados no JavaScript · Orientação a Protótipo · Funções e Manipulação de Listas · Promises e Assincronismo "
+                    "title": "Formação JavaScript Developer",
+                    "descrition": "Conceitos abordados: Variáveis, Escopo e Tipos de dados no JavaScript · Orientação a Protótipo · Funções e Manipulação de Listas · Promises e Assincronismo · Orientação a Objeto · Objetos e Class ·  Desenvolvimento Web "
                 }
             }
         ],
