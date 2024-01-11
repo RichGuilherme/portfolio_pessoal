@@ -2,12 +2,10 @@ import { FiArrowRight } from "react-icons/fi"
 import { WriteTextType } from "./WriteTextType"
 import { useTranslation } from "react-i18next"
 
-
 import bannerAstronauta from "../assets/astronauta-fofo.png"
 import astronautaRocket from "../assets/astronauta-rocket.png"
 import IconsRedeSocais from "./IconsRedeSocais"
 import curriculoPDF from '../assets/Currículo-Richard.pdf'
-
 
 
 const Banner = () => {
@@ -61,8 +59,8 @@ const Banner = () => {
                 </p>
               </h2>
 
-              <a className="flex flex-row items-center mt-7 group cursor-pointer" 
-              href={curriculoPDF} target="_blank" rel="noreferrer">
+              <span className="flex flex-row items-center mt-7 group cursor-pointer" 
+              onClick={() => window.open(curriculoPDF)} target="_blank" rel="noreferrer">
                 <p className="text-lg font-bold">
                   {t("banner.0.resume")}
                 </p>
@@ -71,7 +69,7 @@ const Banner = () => {
                         group-hover:duration-300 ">
                   <FiArrowRight size={18} />
                 </span>
-              </a>
+              </span>
             </div>
 
             <img

@@ -60,7 +60,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
 
 
   const titleHover = "font-bold text-3xl text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200"
-  const tecnologiasHover = 'text-xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200'
+  const tecnologiasHover = 'text-xl text-center font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200'
   const descritionHover = 'font-light text-lg text-start'
   const iconsHover = 'hover:text-primary-200 '
   const boxsProjects = "flex flex-row max-md:flex-col min-h-[270px] max-h-[510px] w-full max-w-[735px] rounded-3xl relative bg-black border-[2px] border-secondary-300 cursor-pointer group"
