@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next'
-import planetaVermelho from '../../assets/planeta-vermelho.png'
+import { useTranslation } from "react-i18next"
+import planetaVermelho from "../../assets/planeta-vermelho.png"
 
-import BoxsAnimat from './BoxsAnimat'
+import BoxsAnimat from "./BoxsAnimat"
 
 const Skills = () => {
   const {t} = useTranslation()

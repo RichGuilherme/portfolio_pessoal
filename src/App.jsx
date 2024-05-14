@@ -1,18 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react"
 
-import 'aos/dist/aos.css'
-import Aos from 'aos'
+import "aos/dist/aos.css"
+import Aos from "aos"
 
 
-import './App.css'
-import Header from './components/header/Header'
-import Banner from './components/Banner'
-import AboutMe from './components/AboutMe'
-import Skills from './components/skills/Skills'
-import Projects from './components/projects/Projects'
-import Contact from './components/contact/Contact'
-import Footer from './components/Footer'
-import Loader from './components/Loader'
+import "./App.css"
+import Header from "./components/header/Header"
+import Banner from "./components/Banner"
+import AboutMe from "./components/AboutMe"
+import Skills from "./components/skills/Skills"
+import Projects from "./components/projects/Projects"
+import Contact from "./components/contact/Contact"
+import Footer from "./components/Footer"
+import Loader from "./components/Loader"
 
 
 

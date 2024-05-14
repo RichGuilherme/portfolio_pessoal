@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react"
 
 const useScrolled = (numberScroll = 0) => {
     const [scrolled, setScrolled] = useState(false)
@@ -16,7 +16,7 @@ const useScrolled = (numberScroll = 0) => {
         window.addEventListener("scroll", onScroll)
     
         return () => window.removeEventListener("scroll", onScroll)
-      }, [])
+      }, [numberScroll])
 
   return [scrolled]
 }

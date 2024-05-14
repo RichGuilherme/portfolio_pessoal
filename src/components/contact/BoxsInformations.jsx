@@ -1,6 +1,6 @@
-import { MdWhatsapp, MdLocationOn } from 'react-icons/md'
-import { IoIosSend } from 'react-icons/io'
-import { useTranslation } from 'react-i18next'
+import { MdWhatsapp, MdLocationOn } from "react-icons/md"
+import { IoIosSend } from "react-icons/io"
+import { useTranslation } from "react-i18next"
 
 const BoxsInformations = () => {
     const {t} = useTranslation()
@@ -8,7 +8,7 @@ const BoxsInformations = () => {
     return (
         <div className='flex flex-wrap justify-center gap-4 w-full max-w-[955px] mt-10'>
             <div className='bg-secondary-200 flex flex-col gap-1 justify-center w-full rounded-lg
-    px-4 max-w-[290px] h-24'>
+    px-4 max-w-[290px] h-24'>S
                 <div className='flex flex-row items-center gap-1'>
                     <MdWhatsapp size={22} className='text-green-400' />
                     <h2 className='font-bold text-xl'>WhatsApp</h2>

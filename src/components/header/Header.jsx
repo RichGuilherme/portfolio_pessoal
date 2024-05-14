@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { IoIosClose, IoIosMenu } from "react-icons/io";
-import useScrolled from '../../hook/useScrolled';
+import useScrolled from "../../hook/useScrolled";
 import { useTranslation } from "react-i18next";
 
-import ChooseLanguage from './ChooseLanguage';
+import ChooseLanguage from "./ChooseLanguage";
 
-import IconsRedeSocais from '../IconsRedeSocais';
+import IconsRedeSocais from "../IconsRedeSocais";
 import { Logo } from "../Logo";
 
 

@@ -1,15 +1,15 @@
-import { useTranslation } from 'react-i18next'
-import { IoIosSchool, IoIosMusicalNotes } from 'react-icons/io'
-import { IoCodeSlashOutline } from 'react-icons/io5'
+import { useTranslation } from "react-i18next"
+import { IoIosSchool, IoIosMusicalNotes } from "react-icons/io"
+import { IoCodeSlashOutline } from "react-icons/io5"
 
 
 const AboutMe = () => {
    const { t } = useTranslation()
 
-   const container = 'flex flex-col items-center  w-11/12 max-w-[514px] sm:w-full h-[368px] mx-auto px-5 bg-black shadow-container'
-   const styleIcons = 'text-primary-200 h-[100px] w-24'
-   const title = 'text-5xl font-bold text-center'
-   const contest = 'text-center font-semibold mt-8 text-[17px] tracking-wide leading-loose'
+   const container = "flex flex-col items-center  w-11/12 max-w-[514px] sm:w-full h-[368px] mx-auto px-5 bg-black shadow-container"
+   const styleIcons = "text-primary-200 h-[100px] w-24"
+   const title = "text-5xl font-bold text-center"
+   const contest = "text-center font-semibold mt-8 text-[17px] tracking-wide leading-loose"
 
 
    return (

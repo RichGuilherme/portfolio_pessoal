@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useTranslation } from 'react-i18next'
-import { useState } from 'react'
+import { useTranslation } from "react-i18next"
+import { useState } from "react"
 
-import ProjetosPessoais from './ProjetosPessoais'
-import Certificados from './Certificados'
+import PersonalProject from "./PersonalProjects"
+import Certificate from "./Certificate"
 
-import planetaRochoso from '../../assets/planeta-rochoso.png'
+import planetaRochoso from "../../assets/planeta-rochoso.png"
 
 const Projects = () => {
   const [showProjectsP, setShowProjectsP] = useState(true)
@@ -57,8 +57,8 @@ const Projects = () => {
       </div>
 
       <div className='w-full mt-20 mb-32'>
-        <ProjetosPessoais OnOff={showProjectsP} />
-        <Certificados OnOff={showCertif} />
+        <PersonalProject OnOff={showProjectsP} />
+        <Certificate OnOff={showCertif} />
       </div>
     </section>
   )

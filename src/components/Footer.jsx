@@ -1,6 +1,6 @@
-import IconsRedeSocais from './IconsRedeSocais'
-import { useTranslation } from 'react-i18next'
-import { Logo } from './Logo'
+import IconsRedeSocais from "./IconsRedeSocais"
+import { useTranslation } from "react-i18next"
+import { Logo } from "./Logo"
 
 
 const Footer = () => {

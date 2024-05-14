@@ -1,22 +1,22 @@
-import iconCss from '../../assets/iconsLinguagens/css3-original.svg'
-import iconTailwind from '../../assets/iconsLinguagens/tailwindcss-original.svg'
-import iconHTMl from '../../assets/iconsLinguagens/html_original.svg'
-import iconJs from '../../assets/iconsLinguagens/javascript-original.svg'
-import iconReact from '../../assets/iconsLinguagens/react-original.svg'
-import iconGit from '../../assets/iconsLinguagens/git-original.svg'
-import iconTypeScript from '../../assets/iconsLinguagens/typescript-original.svg'
-import iconNext from '../../assets/iconsLinguagens/nextjs-original.svg'
+import iconCss from "../../assets/iconsLinguagens/css3-original.svg"
+import iconTailwind from "../../assets/iconsLinguagens/tailwindcss-original.svg"
+import iconHTMl from "../../assets/iconsLinguagens/html_original.svg"
+import iconJs from "../../assets/iconsLinguagens/javascript-original.svg"
+import iconReact from "../../assets/iconsLinguagens/react-original.svg"
+import iconGit from "../../assets/iconsLinguagens/git-original.svg"
+import iconTypeScript from "../../assets/iconsLinguagens/typescript-original.svg"
+import iconNext from "../../assets/iconsLinguagens/nextjs-original.svg"
 
 
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next"
 
 const BoxsAnimat = () => {
     const { t } = useTranslation()
 
-    const boxsBorderTec = 'max-w-[356px] h-24  bg-gradient-to-tr from-gradient-100 via-primary-200 to-gradient-200 rounded-[10px] p-[1.3px] gap-x-1'
-    const boxsTec = 'grid grid-cols-[52px_minmax(265px,_2fr)] grid-rows-2 items-center py-3 px-2 w-full h-full bg-secondary-300 rounded-[10px]'
-    const imgTec = 'w-[54px] h-[52px] float-right'
-    const titleTec = 'text-xl font-bold mb-3'
+    const boxsBorderTec = "max-w-[356px] h-24  bg-gradient-to-tr from-gradient-100 via-primary-200 to-gradient-200 rounded-[10px] p-[1.3px] gap-x-1"
+    const boxsTec = "grid grid-cols-[52px_minmax(265px,_2fr)] grid-rows-2 items-center py-3 px-2 w-full h-full bg-secondary-300 rounded-[10px]"
+    const imgTec = "w-[54px] h-[52px] float-right"
+    const titleTec = "text-xl font-bold mb-3"
 
 
     const tecsSlideRowOne = [

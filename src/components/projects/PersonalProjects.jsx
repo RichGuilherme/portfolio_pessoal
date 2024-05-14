@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { FiGithub } from 'react-icons/fi'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
+import { FiGithub } from "react-icons/fi"
+import { HiOutlineExternalLink } from "react-icons/hi"
 
-import searchMovie from '../../assets/projetosPessoaisImg/searchMovie.png'
-import weatherProject from '../../assets/projetosPessoaisImg/weather-project.png'
-import LOLPages from '../../assets/projetosPessoaisImg/league-of-legends-page.png'
-import projetoPessoal from '../../assets/projetosPessoaisImg/projeto-pessoal.png'
+import searchMovie from "../../assets/projetosPessoaisImg/searchMovie.png"
+import weatherProject from "../../assets/projetosPessoaisImg/weather-project.png"
+import LOLPages from "../../assets/projetosPessoaisImg/league-of-legends-page.png"
+import portfolio from "../../assets/projetosPessoaisImg/projeto-pessoal.png"
 
 
 const ProjetosPessoais = ({ OnOff = true }) => {
@@ -40,7 +40,6 @@ const ProjetosPessoais = ({ OnOff = true }) => {
     },
     {
       id: 3,
-      href: "https://richguilherme.github.io/page-league-of-legends/",
       github: "https://github.com/RichGuilherme/page-league-of-legends",
       img: LOLPages,
       title: "LOL Pages",
@@ -51,7 +50,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
       id: 4,
       href: "https://richguilherme.github.io/portfolio_pessoal/",
       github: "https://github.com/RichGuilherme/portfolio_pessoal",
-      img: projetoPessoal,
+      img: portfolio,
       title: t("projects.1.personal portfolio.title"),
       tecnologias: "React - Tailwind - Js - I18n",
       descrition: t("projects.1.personal portfolio.descrition")
@@ -60,9 +59,9 @@ const ProjetosPessoais = ({ OnOff = true }) => {
 
 
   const titleHover = "font-bold text-3xl text-white group-hover:text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200"
-  const tecnologiasHover = 'text-xl text-center font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200'
-  const descritionHover = 'font-light text-lg text-start'
-  const iconsHover = 'hover:text-primary-200 '
+  const tecnologiasHover = "text-xl text-center font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-gradient-100 via-primary-200 to-gradient-200"
+  const descritionHover = "font-light text-lg text-start"
+  const iconsHover = "hover:text-primary-200 "
   const boxsProjects = "flex flex-row max-md:flex-col min-h-[270px] max-h-[510px] w-full max-w-[735px] rounded-3xl relative bg-black border-[2px] border-secondary-300 cursor-pointer group"
 
   return (
@@ -97,9 +96,11 @@ const ProjetosPessoais = ({ OnOff = true }) => {
                   className={iconsHover} />
               </a>
 
-              <a href={href} rel="noreferrer" target="_blank" >
-                <HiOutlineExternalLink size={28}
-                  className={iconsHover} />
+               
+                 <a href={href} rel="noreferrer" target="_blank" >
+                   <HiOutlineExternalLink size={28}
+                     className={iconsHover} />
+               
               </a>
             </div>
           </span>

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next"
 import bannerAstronauta from "../assets/astronauta-fofo.png"
 import astronautaRocket from "../assets/astronauta-rocket.png"
 import IconsRedeSocais from "./IconsRedeSocais"
-import curriculoPDF from '../assets/Currículo-Richard.pdf'
+import curriculoPDF from "../assets/Currículo-Richard.pdf"
 
 
 const Banner = () => {

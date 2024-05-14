@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi"
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp } from "react-icons/fa"
 
 const IconsRedeSocais = ({ flexDirection = "flex-row"}) => {
    const direction = flexDirection

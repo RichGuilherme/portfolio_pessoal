@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
+import { HiOutlineExternalLink } from "react-icons/hi"
 
 
-import logicaDaProgramação from '../../assets/certificados/certificado-lógica-da-programação.jpg'
-import cssWeb from '../../assets/certificados/bootcamp-css-web.png'
-import fundamentosReact from '../../assets/certificados/fundamentos-react.png'
-import hooksBasico from '../../assets/certificados/hooks-Basicos.png'
-import JsAdvanced from '../../assets/certificados/formação-javascript-developer.png'
+import logicaDaProgramação from "../../assets/certificados/certificado-lógica-da-programação.jpg"
+import cssWeb from "../../assets/certificados/bootcamp-css-web.png"
+import fundamentosReact from "../../assets/certificados/fundamentos-react.png"
+import hooksBasico from "../../assets/certificados/hooks-Basicos.png"
+import JsAdvanced from "../../assets/certificados/formação-javascript-developer.png"
 
 
 const Certificados = ({ OnOff = false }) => {
@@ -60,9 +60,9 @@ const Certificados = ({ OnOff = false }) => {
   ]
 
   const titleHover = "flex items-center font-bold text-3xl text-center text-primary-200 opacity-0 group-hover:opacity-100 duration-700"
-  const CertificatesHover = 'text-xl font-semibold mb-1 opacity-0 group-hover:opacity-100 duration-1000'
-  const descritionHover = 'font-light text-lg text-center opacity-0 group-hover:opacity-100 duration-700'
-  const iconsHover = 'text-white pl-1 opacity-0 group-hover:opacity-100 duration-1000 hover:duration-0 hover:text-primary-200 cursor-pointer'
+  const CertificatesHover = "text-xl font-semibold mb-1 opacity-0 group-hover:opacity-100 duration-1000"
+  const descritionHover = "font-light text-lg text-center opacity-0 group-hover:opacity-100 duration-700"
+  const iconsHover = "text-white pl-1 opacity-0 group-hover:opacity-100 duration-1000 hover:duration-0 hover:text-primary-200 cursor-pointer"
   const boxsCertificates = "h-[270px] w-full rounded-3xl relative before:cursor-default overflow-hidden max-w-sm before:bg-[#0a1629] before:opacity-90 before:w-full before:h-0 before:absolute before:duration-[900ms] hover:before:h-full group "
 
 
