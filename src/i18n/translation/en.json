@@ -16,14 +16,19 @@
                 "front-end developer": "Front-End Developer",
                 "icon astronaut with rocket": "astronaut in a rocket",
                 "icon astronaut in front of the computer": "astronaut in front of the computer",
-                "resume" : "Resume"
+                "resume": "Resume"
             }
         ],
         "about me": [
-            {"title" : "About Me"},
+            {
+                "title": "About Me"
+            },
             {
                 "education": "Education",
-                "formation": "Technologist in System Analysis and Development"
+                "formationOne": "Technologist Degree in Systems Analysis and Development ",
+                "dateFormationOne": "Jan/22 - july/24 / Completed",
+                "formationTwo": " Bachelor's Degree in Information Systems",
+                "dateFormationTwo": "Aug/24 - july/26"
             },
             {
                 "experiences": "Work EXP",
@@ -68,8 +73,8 @@
                 "weather project": {
                     "descrition": "Project that shows the details of the climate of some region using the OpenWeatherMap Api."
                 },
-                "lol pages": {
-                    "descrition": "Reimagining the League Of Legends game page."
+                "taskList": {
+                    "descrition": "The project is a task list with front-end and back-end, simple for creating, editing, filtering and deleting tasks."
                 },
                 "personal portfolio": {
                     "title": "Personal Portfolio",
@@ -85,13 +90,13 @@
                     "title": "Web CSS",
                     "descrition": "Concepts covered in the course:2d and 3d animations · Stylization · Pseudo-class and Pseudo-elements · CSS Grid Layout · Flexbox · Responsibility · Good practices and convention in Css"
                 },
-                "react fundamentals": {
-                    "title": "React Fundamentals",
-                    "descrition": "Course of the first steps in the library"
+                "react advanced": {
+                    "title": "React Developer training",
+                    "descrition": "Complete react.js course"
                 },
-                "basic hooks": {
-                    "title": "Basic React Hooks",
-                    "descrition": "Learn a little about the main hooks in react"
+                "fundaments node": {
+                    "title": "Node.js Fundamentals",
+                    "descrition": "Course with the fundamentals of nodejs and api creation"
                 },
                 "js advanced": {
                     "title": "Javascript Developer Training",

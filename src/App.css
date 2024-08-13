@@ -6,35 +6,33 @@
 @tailwind utilities;
 
 html {
-    scrollbar-width: thin;
-    scrollbar-color: black;
-    scroll-behavior: smooth;
-  }
-  
-body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-
+  scrollbar-width: thin;
+  scrollbar-color: black;
+  scroll-behavior: smooth;
 }
 
-  ::-webkit-scrollbar {
-    width: 11px;
-  }
+body {
+  overflow-x: hidden;
+}
 
-  ::-webkit-scrollbar-track {
-    background: black;
-  }
+::-webkit-scrollbar {
+  width: 11px;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, rgba(35,59,116,1) 6%, rgba(110,67,203,1) 50%, rgba(48,28,116,1) 95%);
-    border: 1px solid  #14142B;
-    border-radius: 10px;
-  }
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(35, 59, 116, 1) 6%, rgba(110, 67, 203, 1) 50%, rgba(48, 28, 116, 1) 95%);
+  border: 1px solid #14142B;
+  border-radius: 10px;
+}
 
 h1 {
-    font-size: 53px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #6E43CB;
+  font-size: 53px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #6E43CB;
 
 }

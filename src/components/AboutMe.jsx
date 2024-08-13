@@ -27,8 +27,12 @@ const AboutMe = () => {
                <IoIosSchool className={styleIcons} />
                <h2 className={title} >{t("about me.1.education")}</h2>
                <p className={contest}>
-                  {t("about me.1.formation")}<br></br>
-                  Jan/22 - jul/24
+                  {t("about me.1.formationOne")}<br></br>
+                  {t("about me.1.dateFormationOne")}
+               </p>
+               <p className={contest}>
+                  {t("about me.1.formationTwo")}<br></br>
+                  {t("about me.1.dateFormationTwo")}
                </p>
             </div>
 

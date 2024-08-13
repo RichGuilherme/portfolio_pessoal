@@ -6,8 +6,8 @@ import { HiOutlineExternalLink } from "react-icons/hi"
 
 import logicaDaProgramação from "../../assets/certificados/certificado-lógica-da-programação.jpg"
 import cssWeb from "../../assets/certificados/bootcamp-css-web.png"
-import fundamentosReact from "../../assets/certificados/fundamentos-react.png"
-import hooksBasico from "../../assets/certificados/hooks-Basicos.png"
+import reactAdvanced from "../../assets/certificados/formação-react-developer.png"
+import fundamentalsNode from "../../assets/certificados/formação-Node.js-fundamentals.png"
 import JsAdvanced from "../../assets/certificados/formação-javascript-developer.png"
 
 
@@ -36,17 +36,17 @@ const Certificados = ({ OnOff = false }) => {
     },
     {
       id: 3,
-      href: "https://www.dio.me/certificate/D56D691A/share",
-      img: fundamentosReact,
-      title: t("projects.2.react fundamentals.title"),
-      descrition: t("projects.2.react fundamentals.descrition")
+      href: "https://hermes.digitalinnovation.one/certificates/22BE120C.pdf?_gl=1*18ttwhq*_ga*MTkwNDEwMjA5Ni4xNjkxMTY2MzEy*_ga_7GXMH3CQ72*MTY5MzQyMTkxMi4zMy4xLjE2OTM0MjE5NzguNTYuMC4w",
+      img: reactAdvanced,
+      title: t("projects.2.react advanced.title"),
+      descrition: t("projects.2.react advanced.descrition")
     },
     {
       id: 4,
-      href: "https://www.dio.me/certificate/41D541C9/share",
-      img: hooksBasico,
-      title: t("projects.2.basic hooks.title"),
-      descrition: t("projects.2.basic hooks.descrition")
+      href: "https://www.dio.me/certificate/PND8MUCA/share",
+      img: fundamentalsNode,
+      title: t("projects.2.fundaments node.title"),
+      descrition: t("projects.2.fundaments node.descrition")
     },
     {
       id: 5,
@@ -55,8 +55,6 @@ const Certificados = ({ OnOff = false }) => {
       title: t("projects.2.js advanced.title"),
       descrition: t("projects.2.js advanced.descrition")
     },
-
-
   ]
 
   const titleHover = "flex items-center font-bold text-3xl text-center text-primary-200 opacity-0 group-hover:opacity-100 duration-700"
@@ -83,11 +81,11 @@ const Certificados = ({ OnOff = false }) => {
           <span className="absolute top-0 left-0 flex flex-col gap-1 items-center
             w-full h-full py-[10px] px-2 mt-1">
             <h2 className={titleHover}>
-               {title}
-                <a href={href} rel="noreferrer" target="_blank" >
-                  <HiOutlineExternalLink size={33}
-                    className={iconsHover} />
-                </a>
+              {title}
+              <a href={href} rel="noreferrer" target="_blank" >
+                <HiOutlineExternalLink size={33}
+                  className={iconsHover} />
+              </a>
             </h2>
 
             <h3 className={CertificatesHover}>

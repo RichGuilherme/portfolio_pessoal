@@ -29,6 +29,7 @@ const SendMessage = () => {
                 setName("")
                 setEmail("")
                 setMessage("")
+                
                 alert(t("contact.1.send message.success"))
             }), () => {
                 alert(t("contact.1.send message.erro"))

@@ -6,7 +6,7 @@ import { HiOutlineExternalLink } from "react-icons/hi"
 
 import searchMovie from "../../assets/projetosPessoaisImg/searchMovie.png"
 import weatherProject from "../../assets/projetosPessoaisImg/weather-project.png"
-import LOLPages from "../../assets/projetosPessoaisImg/league-of-legends-page.png"
+import taskList from "../../assets/projetosPessoaisImg/task-list.png"
 import portfolio from "../../assets/projetosPessoaisImg/projeto-pessoal.png"
 
 
@@ -16,7 +16,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
 
   useEffect(() => {
     setOn(OnOff)
-  },[OnOff])
+  }, [OnOff])
 
 
   const listProjetcs = [
@@ -40,11 +40,11 @@ const ProjetosPessoais = ({ OnOff = true }) => {
     },
     {
       id: 3,
-      github: "https://github.com/RichGuilherme/page-league-of-legends",
-      img: LOLPages,
-      title: "LOL Pages",
-      tecnologias: "Html - Css - Js",
-      descrition: t("projects.1.lol pages.descrition")
+      github: "https://github.com/RichGuilherme/task_list",
+      img: taskList,
+      title: "Task List",
+      tecnologias: "Typescript - React.js - Node.js - Prisma - Postgres - Docker",
+      descrition: t("projects.1.taskList.descrition")
     },
     {
       id: 4,
@@ -76,7 +76,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
             className="object-cover object-center h-full w-1/2 rounded-3xl max-md:w-full max-md:h-72 "
             loading='lazy'
             src={img}
-            alt={title} 
+            alt={title}
           />
 
           <span className="flex flex-col justify-evenly gap-3 items-center
@@ -91,17 +91,19 @@ const ProjetosPessoais = ({ OnOff = true }) => {
               {tecnologias}</h3>
 
             <div className='flex flex-row gap-4 mt-8'>
-              <a href={github} rel="noreferrer" target="_blank">
-                <FiGithub size={28}
-                  className={iconsHover} />
-              </a>
+              {github &&
+                <a href={github} rel="noreferrer" target="_blank">
+                  <FiGithub size={28}
+                    className={iconsHover} />
+                </a>
+              }
 
-               
-                 <a href={href} rel="noreferrer" target="_blank" >
-                   <HiOutlineExternalLink size={28}
-                     className={iconsHover} />
-               
-              </a>
+              {href &&
+                <a href={href} rel="noreferrer" target="_blank" >
+                  <HiOutlineExternalLink size={28}
+                    className={iconsHover} />
+                </a>
+              }
             </div>
           </span>
 

@@ -16,14 +16,19 @@
                 "front-end developer": "Desenvolvedor Front-End",
                 "icon astronaut with rocket": "astronauta em um foquete",
                 "icon astronaut in front of the computer": "astronauta de frente o computador",
-                "resume" : "Currículo"
+                "resume": "Currículo"
             }
         ],
         "about me": [
-            {"title": "Sobre Mim"},
+            {
+                "title": "Sobre Mim"
+            },
             {
                 "education": "Educação",
-                "formation": "Tecnólogo em Análise e Desenvolvimento de Sistema"
+                "formationOne": "Tecnólogo em Análise e Desenvolvimento de Sistema",
+                "dateFormationOne": "Jan/22 - jul/24 / Concluído",
+                "formationTwo": "Bacharelado em Sistema da Informação",
+                "dateFormationTwo": "Agost/24 - jul/26"
             },
             {
                 "experiences": "EXP Profissonal",
@@ -49,7 +54,7 @@
                     "descritionJS": "JavaScript é uma linguagem de programação que impulsiona a web",
                     "descritionReact": "Uma biblioteca javascript usada para criar a interface do usuário",
                     "descritionGit": "É o sistema de controle de versão open source mais usado no mundo atualmente!",
-                    "descritionTypeScript":"É uma linguagem de programação que é fortemente tipada e transcompila para JavaScript"
+                    "descritionTypeScript": "É uma linguagem de programação que é fortemente tipada e transcompila para JavaScript"
                 }
             }
         ],
@@ -68,8 +73,8 @@
                 "weather project": {
                     "descrition": "Projeto que mostra os detalhe do clima de alguma região usando a API OpenWeatherMap."
                 },
-                "lol pages": {
-                    "descrition": "Reimaginação da página do jogo League Of Legends."
+                "taskList": {
+                    "descrition": "O projeto é uma lista de tarefas com front-end e back-end, simples para criação, edição, filtragem e delete das tarefas."
                 },
                 "personal portfolio": {
                     "title": "Portfólio Pessoal",
@@ -85,13 +90,13 @@
                     "title": "CSS Web",
                     "descrition": "Conceitos abordados no curso:Animações 2d e 3d · Estilização · Pseudo-class e Pseudo-elementos · CSS Grid Layout · Flexbox · Reponsividade · Boas práticas e convenção no Css"
                 },
-                "react fundamentals": {
-                    "title": "Fundamentos React",
-                    "descrition": "Curso dos os primeiros passos na biblioteca"
+                "react advanced": {
+                    "title": "Formação React Developer",
+                    "descrition": "Curso completo de react.js"
                 },
-                "basic hooks": {
-                    "title": "Hooks Básico React",
-                    "descrition": "Aprende um pouco sobre os principais hooks no react"
+                "fundaments node": {
+                    "title": "Fundaments Node.js",
+                    "descrition": "Curso com os fundamentos de nodejs e criação de api"
                 },
                 "js advanced": {
                     "title": "Formação JavaScript Developer",
