@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import { useEffect, useState } from "react"
 import { useTranslation } from "react-i18next"
 import { FiGithub } from "react-icons/fi"
 import { HiOutlineExternalLink } from "react-icons/hi"
@@ -10,13 +8,8 @@ import taskList from "../../assets/projetosPessoaisImg/task-list.png"
 import portfolio from "../../assets/projetosPessoaisImg/projeto-pessoal.png"
 
 
-const ProjetosPessoais = ({ OnOff = true }) => {
+const ProjetosPessoais = () => {
   const { t } = useTranslation()
-  const [on, setOn] = useState(true)
-
-  useEffect(() => {
-    setOn(OnOff)
-  }, [OnOff])
 
 
   const listProjetcs = [
@@ -66,7 +59,7 @@ const ProjetosPessoais = ({ OnOff = true }) => {
 
   return (
     <div
-      className={`w-[95%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto`}>
+      className={"w-[95%] flex flex-row flex-wrap gap-12 justify-center mx-auto"}>
 
       {listProjetcs.map(({ id, img, title, descrition, github, href, tecnologias }) => (
         <div

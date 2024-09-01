@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-import { useState, useEffect } from "react"
+
 import { useTranslation } from "react-i18next"
 import { HiOutlineExternalLink } from "react-icons/hi"
 
@@ -11,13 +10,9 @@ import fundamentalsNode from "../../assets/certificados/formação-Node.js-funda
 import JsAdvanced from "../../assets/certificados/formação-javascript-developer.png"
 
 
-const Certificados = ({ OnOff = false }) => {
+const Certificados = () => {
   const { t } = useTranslation()
-  const [on, setOn] = useState(false)
 
-  useEffect(() => {
-    setOn(OnOff)
-  }, [OnOff])
 
   const listsCertificates = [
     {
@@ -65,7 +60,7 @@ const Certificados = ({ OnOff = false }) => {
 
 
   return (
-    <div className={`w-[70%] ${on ? "flex" : "hidden"} flex-row flex-wrap gap-12 justify-center mx-auto`}>
+    <div className={"w-[70%] flex flex-row flex-wrap gap-12 justify-center mx-auto"}>
 
       {listsCertificates.map(({ id, img, title, descrition, href, tecnologias }) => (
         <div
